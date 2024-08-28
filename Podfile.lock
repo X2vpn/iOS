@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (5.8.1)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - IQKeyboardManagerSwift (7.0.0)
+  - lottie-ios (4.4.3)
+  - OneSignal (3.12.9):
+    - OneSignal/OneSignalCore (= 3.12.9)
+    - OneSignal/OneSignalExtension (= 3.12.9)
+    - OneSignal/OneSignalOutcomes (= 3.12.9)
+  - OneSignal/OneSignalCore (3.12.9)
+  - OneSignal/OneSignalExtension (3.12.9):
+    - OneSignal/OneSignalCore
+    - OneSignal/OneSignalOutcomes
+  - OneSignal/OneSignalOutcomes (3.12.9):
+    - OneSignal/OneSignalCore
+  - OpenVPNAdapter (0.3.0):
+    - OpenVPNAdapter/asio (= 0.3.0)
+    - OpenVPNAdapter/lz4 (= 0.3.0)
+    - OpenVPNAdapter/mbedtls (= 0.3.0)
+    - OpenVPNAdapter/openvpn (= 0.3.0)
+  - OpenVPNAdapter/asio (0.3.0)
+  - OpenVPNAdapter/lz4 (0.3.0)
+  - OpenVPNAdapter/mbedtls (0.3.0)
+  - OpenVPNAdapter/openvpn (0.3.0)
+  - SwiftyPing (1.2.2)
+  - UICKeyChainStore (2.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - OneSignal (<= 4.0)
+  - OpenVPNAdapter (from `https://github.com/ss-abramchuk/OpenVPNAdapter.git`, tag `0.3.0`)
+  - SwiftyPing
+  - UICKeyChainStore
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - OneSignal
+    - SwiftyPing
+    - UICKeyChainStore
+
+EXTERNAL SOURCES:
+  OpenVPNAdapter:
+    :git: https://github.com/ss-abramchuk/OpenVPNAdapter.git
+    :tag: 0.3.0
+
+CHECKOUT OPTIONS:
+  OpenVPNAdapter:
+    :git: https://github.com/ss-abramchuk/OpenVPNAdapter.git
+    :tag: 0.3.0
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  IQKeyboardManagerSwift: bd69f3a49f6ead9cb6ce17723cf0c6c9b948d83e
+  lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
+  OneSignal: b1f62219a71dee69e64df7b7b8dff0a402b209d1
+  OpenVPNAdapter: f8b04856c7215d2895b5c411feb859e6952ede3f
+  SwiftyPing: 284e9dc6ec6b7ed42c906758f8c1c067d8a7fc21
+  UICKeyChainStore: ba3bff2c762b12db1e516f395c837dd25298b05e
+
+PODFILE CHECKSUM: b4ff3257dda9a63c7f4cd6eec3d995878099d23a
+
+COCOAPODS: 1.14.3

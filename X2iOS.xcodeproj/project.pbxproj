@@ -1,0 +1,2308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		158CF5A6BF33FA779498BBCC /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674A9442A8404CF7D1BF34A4 /* Pods_NotificationServiceExtension.framework */; };
+		58233BCF2591F842002060A8 /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58233BCE2591F842002060A8 /* NotificationToken.swift */; };
+		585B105A2577E293004F691E /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10462577E293004F691E /* InterfaceConfiguration.swift */; };
+		585B105B2577E293004F691E /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10462577E293004F691E /* InterfaceConfiguration.swift */; };
+		585B105E2577E293004F691E /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10472577E293004F691E /* PeerConfiguration.swift */; };
+		585B105F2577E293004F691E /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10472577E293004F691E /* PeerConfiguration.swift */; };
+		585B10622577E293004F691E /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10482577E293004F691E /* DNSServer.swift */; };
+		585B10632577E293004F691E /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10482577E293004F691E /* DNSServer.swift */; };
+		585B10662577E294004F691E /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10492577E293004F691E /* TunnelConfiguration.swift */; };
+		585B10672577E294004F691E /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10492577E293004F691E /* TunnelConfiguration.swift */; };
+		585B106F2577E294004F691E /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104B2577E293004F691E /* WireGuardAdapter.swift */; };
+		585B10732577E294004F691E /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104C2577E293004F691E /* Array+ConcurrentMap.swift */; };
+		585B10772577E294004F691E /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104D2577E293004F691E /* DNSResolver.swift */; };
+		585B107B2577E294004F691E /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104E2577E293004F691E /* IPAddress+AddrInfo.swift */; };
+		585B107E2577E294004F691E /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104F2577E293004F691E /* PrivateKey.swift */; };
+		585B107F2577E294004F691E /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B104F2577E293004F691E /* PrivateKey.swift */; };
+		585B10832577E294004F691E /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10502577E293004F691E /* PacketTunnelSettingsGenerator.swift */; };
+		585B10862577E294004F691E /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10512577E293004F691E /* IPAddressRange.swift */; };
+		585B10872577E294004F691E /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10512577E293004F691E /* IPAddressRange.swift */; };
+		585B108A2577E294004F691E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10522577E293004F691E /* Endpoint.swift */; };
+		585B108B2577E294004F691E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B10522577E293004F691E /* Endpoint.swift */; };
+		585B108E2577E294004F691E /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 585B10562577E293004F691E /* x25519.c */; };
+		585B108F2577E294004F691E /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 585B10562577E293004F691E /* x25519.c */; };
+		585B10922577E294004F691E /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 585B10572577E293004F691E /* key.c */; };
+		585B10932577E294004F691E /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 585B10572577E293004F691E /* key.c */; };
+		5892BFA025558288000E678D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892BF9F25558288000E678D /* PacketTunnelProvider.swift */; };
+		5F45417D21C1B23600994C13 /* UITableViewCell+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45417C21C1B23600994C13 /* UITableViewCell+Reuse.swift */; };
+		5F45418C21C2D48200994C13 /* TunnelEditKeyValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45418B21C2D48200994C13 /* TunnelEditKeyValueCell.swift */; };
+		5F45419021C2D53800994C13 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45418F21C2D53800994C13 /* SwitchCell.swift */; };
+		5F45419221C2D55800994C13 /* CheckmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45419121C2D55800994C13 /* CheckmarkCell.swift */; };
+		5F45419821C2D60500994C13 /* KeyValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45419721C2D60500994C13 /* KeyValueCell.swift */; };
+		5F4541A021C2D6B700994C13 /* TunnelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F45419F21C2D6B700994C13 /* TunnelListCell.swift */; };
+		5F4541A221C2D6DF00994C13 /* BorderedTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4541A121C2D6DF00994C13 /* BorderedTextButton.swift */; };
+		5F4541A621C4449E00994C13 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4541A521C4449E00994C13 /* ButtonCell.swift */; };
+		5F4541A921C451D100994C13 /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4541A821C451D100994C13 /* TunnelStatus.swift */; };
+		5F4541B221CBFAEE00994C13 /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4541B121CBFAEE00994C13 /* String+ArrayConversion.swift */; };
+		5F9696AE21CD6F72008063FE /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4541B121CBFAEE00994C13 /* String+ArrayConversion.swift */; };
+		5F9696B021CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9696AF21CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift */; };
+		5F9696B121CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9696AF21CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift */; };
+		652D737B003422242F2FC3CC /* Pods_ConnectTunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B339F3263EDAD338F79CC0A /* Pods_ConnectTunnel.framework */; };
+		6B5C5E27220A48D30024272E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C5E26220A48D30024272E /* Keychain.swift */; };
+		6B5C5E28220A48D30024272E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C5E26220A48D30024272E /* Keychain.swift */; };
+		6B5CA6B1220DE4E900F126CF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */; };
+		6B62E45F220A6FA900EF34A6 /* PrivateDataConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62E45E220A6FA900EF34A6 /* PrivateDataConfirmation.swift */; };
+		6B653B86220DE2960050E69C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */; };
+		6B707D8421F918D4000A8F73 /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B707D8321F918D4000A8F73 /* TunnelConfiguration+UapiConfig.swift */; };
+		6F0F44C9222D55BB00B0FF04 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F44C8222D55BB00B0FF04 /* TextCell.swift */; };
+		6F0F44CB222D55FD00B0FF04 /* EditableTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F44CA222D55FD00B0FF04 /* EditableTextCell.swift */; };
+		6F19D30422402B8700A126F2 /* ConfirmationAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19D30322402B8700A126F2 /* ConfirmationAlertPresenter.swift */; };
+		6F29A9432278518D00DC6A6B /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29A9422278518D00DC6A6B /* RecentTunnelsTracker.swift */; };
+		6F29A94722787B1600DC6A6B /* QuickActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29A94622787B1600DC6A6B /* QuickActionItem.swift */; };
+		6F5A2B4621AFDED40081EDD8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5A2B4421AFDE020081EDD8 /* FileManager+Extension.swift */; };
+		6F5A2B4821AFF49A0081EDD8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5A2B4421AFDE020081EDD8 /* FileManager+Extension.swift */; };
+		6F5D0C22218352EF000F85AD /* X2NetworkExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F5D0C1A218352EF000F85AD /* X2NetworkExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F61F1E921B932F700483816 /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61F1E821B932F700483816 /* WireGuardAppError.swift */; };
+		6F61F1EB21B937EF00483816 /* WireGuardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61F1EA21B937EF00483816 /* WireGuardResult.swift */; };
+		6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
+		6F628C41217F47DB003482A3 /* TunnelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */; };
+		6F70E20E221058E1008BDFB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F70E20C221058DF008BDFB4 /* InfoPlist.strings */; };
+		6F7774E1217181B1006A79B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774DF217181B1006A79B3 /* MainViewController.swift */; };
+		6F7774E2217181B1006A79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E0217181B1006A79B3 /* AppDelegate.swift */; };
+		6F7774E421718281006A79B3 /* TunnelsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E321718281006A79B3 /* TunnelsListTableViewController.swift */; };
+		6F7774EF21722D97006A79B3 /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774EE21722D97006A79B3 /* TunnelsManager.swift */; };
+		6F7774F321774263006A79B3 /* TunnelEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774F221774263006A79B3 /* TunnelEditTableViewController.swift */; };
+		6F7F7E5F21C7D74B00527607 /* TunnelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F7E5E21C7D74B00527607 /* TunnelErrors.swift */; };
+		6F8F0D7122258153000E8335 /* ActivateOnDemandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F0D7022258153000E8335 /* ActivateOnDemandViewModel.swift */; };
+		6F8F0D7422267AD2000E8335 /* ChevronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F0D7322267AD2000E8335 /* ChevronCell.swift */; };
+		6F8F0D7722267C57000E8335 /* SSIDOptionEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F0D7622267C57000E8335 /* SSIDOptionEditTableViewController.swift */; };
+		6F907C9C224663A2003CED21 /* LogViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F907C9B224663A2003CED21 /* LogViewHelper.swift */; };
+		6F919EC3218A2AE90023B400 /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F919EC2218A2AE90023B400 /* ErrorPresenter.swift */; };
+		6F919ED9218C65C50023B400 /* wireguard_doc_logo_22x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F919ED5218C65C50023B400 /* wireguard_doc_logo_22x29.png */; };
+		6F919EDA218C65C50023B400 /* wireguard_doc_logo_44x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F919ED6218C65C50023B400 /* wireguard_doc_logo_44x58.png */; };
+		6F919EDB218C65C50023B400 /* wireguard_doc_logo_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F919ED7218C65C50023B400 /* wireguard_doc_logo_64x64.png */; };
+		6F919EDC218C65C50023B400 /* wireguard_doc_logo_320x320.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F919ED8218C65C50023B400 /* wireguard_doc_logo_320x320.png */; };
+		6F9B8A8E223398610041B9C4 /* SSIDOptionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8A8D223398610041B9C4 /* SSIDOptionDetailTableViewController.swift */; };
+		6FB1017921C57DE600766195 /* MockTunnels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1017821C57DE600766195 /* MockTunnels.swift */; };
+		6FBA103B21D6B4290051C35F /* ErrorPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBA103A21D6B4280051C35F /* ErrorPresenterProtocol.swift */; };
+		6FBA103E21D6B6D70051C35F /* TunnelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBA103D21D6B6D70051C35F /* TunnelImporter.swift */; };
+		6FDB6D18224CC05A00EE4BC3 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB6D16224CC04E00EE4BC3 /* LogViewController.swift */; };
+		6FDEF7E62185EFB200D8FBF6 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */; };
+		6FDEF7FB21863B6100D8FBF6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7F621863B6100D8FBF6 /* unzip.c */; };
+		6FDEF7FC21863B6100D8FBF6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7F721863B6100D8FBF6 /* zip.c */; };
+		6FDEF80021863C0100D8FBF6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7FF21863C0100D8FBF6 /* ioapi.c */; };
+		6FDEF802218646BA00D8FBF6 /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF801218646B900D8FBF6 /* ZipArchive.swift */; };
+		6FDEF806218725D200D8FBF6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF805218725D200D8FBF6 /* SettingsTableViewController.swift */; };
+		6FE1765621C90BBE002690EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FE1765421C90BBE002690EA /* Localizable.strings */; };
+		6FE1765A21C90E87002690EA /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1765921C90E87002690EA /* LocalizationHelper.swift */; };
+		6FE254FB219C10800028284D /* ZipImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE254FA219C10800028284D /* ZipImporter.swift */; };
+		6FE254FF219C60290028284D /* ZipExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE254FE219C60290028284D /* ZipExporter.swift */; };
+		6FF3527021C240160008484E /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3526C21C23F960008484E /* ringlogger.c */; };
+		6FF3527121C240160008484E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3526E21C23FA10008484E /* Logger.swift */; };
+		6FF3527221C2616C0008484E /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3526C21C23F960008484E /* ringlogger.c */; };
+		6FF3527321C2616C0008484E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3526E21C23FA10008484E /* Logger.swift */; };
+		6FF4AC1F211EC472002C96EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF4AC1E211EC472002C96EB /* Assets.xcassets */; };
+		6FF4AC22211EC472002C96EB /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF4AC20211EC472002C96EB /* LaunchScreen2.storyboard */; };
+		6FFA5D952194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */; };
+		6FFA5D96219446380001E2F7 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */; };
+		6FFA5DA021958ECC0001E2F7 /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D9F21958ECC0001E2F7 /* ErrorNotifier.swift */; };
+		6FFA5DA42197085D0001E2F7 /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5DA32197085D0001E2F7 /* ActivateOnDemandOption.swift */; };
+		710C34092BD7B0AB00E51246 /* IPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C34082BD7B0AB00E51246 /* IPBundle.swift */; };
+		710C340B2BD7B0EC00E51246 /* InAppVPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C340A2BD7B0EC00E51246 /* InAppVPN.swift */; };
+		710C340D2BD7B11700E51246 /* InAppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C340C2BD7B11700E51246 /* InAppFeature.swift */; };
+		710C340F2BD7B13900E51246 /* InAppPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C340E2BD7B13900E51246 /* InAppPayment.swift */; };
+		710C34112BD7B14F00E51246 /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C34102BD7B14F00E51246 /* BannerData.swift */; };
+		710C34132BD7B17200E51246 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C34122BD7B17200E51246 /* User.swift */; };
+		710C34152BD7BFDD00E51246 /* X2Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C34142BD7BFDD00E51246 /* X2Splash.swift */; };
+		713086932BE4CA64009C936A /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7130868E2BE4CA64009C936A /* Inter-Medium.ttf */; };
+		713086942BE4CA64009C936A /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7130868F2BE4CA64009C936A /* Inter-Bold.ttf */; };
+		713086952BE4CA64009C936A /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713086902BE4CA64009C936A /* Inter-Light.ttf */; };
+		713086962BE4CA64009C936A /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713086912BE4CA64009C936A /* Inter-SemiBold.ttf */; };
+		713086972BE4CA64009C936A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713086922BE4CA64009C936A /* Inter-Regular.ttf */; };
+		7142EDEC2BE35C08001CB458 /* X2Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142EDEB2BE35C08001CB458 /* X2Login.swift */; };
+		714CB6D82BE8D4090004AECF /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6D72BE8D4090004AECF /* Device.swift */; };
+		714CB6DA2BE8D43E0004AECF /* DeviceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6D92BE8D43E0004AECF /* DeviceResponse.swift */; };
+		714CB6DD2BE8D7690004AECF /* CellForDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6DC2BE8D7690004AECF /* CellForDevice.swift */; };
+		714CB6DF2BE8FB1E0004AECF /* X2CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6DE2BE8FB1E0004AECF /* X2CreateAccount.swift */; };
+		714CB6E12BE8FB410004AECF /* X2UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6E02BE8FB410004AECF /* X2UserDetails.swift */; };
+		714CB6E32BE8FB700004AECF /* X2SignUpOtp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6E22BE8FB700004AECF /* X2SignUpOtp.swift */; };
+		714CB6E52BE8FB820004AECF /* X2SignUpConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6E42BE8FB820004AECF /* X2SignUpConfirmation.swift */; };
+		714CB6E72BEA03B10004AECF /* X2ForgetPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6E62BEA03B10004AECF /* X2ForgetPass.swift */; };
+		714CB6E92BEA210E0004AECF /* X2ForgetPassOtp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6E82BEA210E0004AECF /* X2ForgetPassOtp.swift */; };
+		714CB6EB2BEA2BD30004AECF /* X2SetNewPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6EA2BEA2BD30004AECF /* X2SetNewPass.swift */; };
+		714CB6ED2BEA3A8B0004AECF /* X2PasswordConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CB6EC2BEA3A8B0004AECF /* X2PasswordConfirmation.swift */; };
+		714EBCA22BE3A93900D690EC /* X2TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EBCA12BE3A93900D690EC /* X2TabBarHome.swift */; };
+		714EBCA42BE3A96E00D690EC /* X2TabBarServerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EBCA32BE3A96E00D690EC /* X2TabBarServerList.swift */; };
+		714EBCA62BE3A99700D690EC /* X2TabBarSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EBCA52BE3A99700D690EC /* X2TabBarSetting.swift */; };
+		714EBCA82BE3A9AF00D690EC /* X2TabBarProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EBCA72BE3A9AF00D690EC /* X2TabBarProfile.swift */; };
+		714EBCAA2BE3AA5200D690EC /* X2Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EBCA92BE3AA5200D690EC /* X2Device.swift */; };
+		715237872BB54343004D494F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715237862BB54343004D494F /* SceneDelegate.swift */; };
+		7167860E2C1088260089354E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167860D2C1088260089354E /* StoreKit.framework */; };
+		716786102C1196FA0089354E /* X2DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167860F2C1196FA0089354E /* X2DeleteAccount.swift */; };
+		7168340F2BDA0DB4001E6886 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168340E2BDA0DB4001E6886 /* StoreManager.swift */; };
+		716834112BDA0DE0001E6886 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716834102BDA0DE0001E6886 /* Receipt.swift */; };
+		716834132BDA0FA8001E6886 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716834122BDA0FA8001E6886 /* GeneralResponse.swift */; };
+		716834152BDA0FC6001E6886 /* ErrorObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716834142BDA0FC6001E6886 /* ErrorObj.swift */; };
+		716834192BDA1963001E6886 /* JHNetworkSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 716834172BDA1963001E6886 /* JHNetworkSpeed.m */; };
+		716834222BDA83F8001E6886 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716834212BDA83F8001E6886 /* Country.swift */; };
+		7171F3982BE3AF9B002CA12B /* X2Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171F3972BE3AF9B002CA12B /* X2Feedback.swift */; };
+		7171F39A2BE3B4B7002CA12B /* X2AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171F3992BE3B4B7002CA12B /* X2AboutApp.swift */; };
+		7171F39C2BE3B509002CA12B /* X2PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171F39B2BE3B509002CA12B /* X2PrivacyPolicy.swift */; };
+		7171F39E2BE3B847002CA12B /* X2ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171F39D2BE3B847002CA12B /* X2ChangePassword.swift */; };
+		7171F3A02BE3B86B002CA12B /* X2Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171F39F2BE3B86B002CA12B /* X2Pricing.swift */; };
+		718222392BD8C6CD004541B9 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718222382BD8C6CD004541B9 /* CityCell.swift */; };
+		71968EF32BD235000029231C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71968EF12BD22ECB0029231C /* LaunchScreen.storyboard */; };
+		71A7B1FF2BE34AC800B268AA /* X2Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7B1FE2BE34AC800B268AA /* X2Slide.swift */; };
+		71B3DD2A2C11BB8100E3F6C1 /* CellForPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3DD292C11BB8100E3F6C1 /* CellForPrice.swift */; };
+		71B4644B2BD9154500491735 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */; };
+		71B4644F2BD9154500491735 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B4644E2BD9154500491735 /* PacketTunnelProvider.m */; };
+		71B464542BD9154500491735 /* ConnectTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71B4644A2BD9154500491735 /* ConnectTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71D017042C09CA220062A3D2 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 71D017032C09CA220062A3D2 /* animation.json */; };
+		71E51DEA2BDFC4F400FC6AD1 /* auth-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB42BDFC4BA00FC6AD1 /* auth-common.c */; };
+		71E51DEB2BDFC4F400FC6AD1 /* auth-globalprotect.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB52BDFC4BA00FC6AD1 /* auth-globalprotect.c */; };
+		71E51DEC2BDFC4F400FC6AD1 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB72BDFC4BA00FC6AD1 /* auth.c */; };
+		71E51DED2BDFC4F400FC6AD1 /* auth-juniper.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB62BDFC4BA00FC6AD1 /* auth-juniper.c */; };
+		71E51DEF2BDFC50300FC6AD1 /* client.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = 71E51DB82BDFC4BA00FC6AD1 /* client.ovpn */; };
+		71E51DF02BDFC51B00FC6AD1 /* gnutls_tpm.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC02BDFC4BA00FC6AD1 /* gnutls_tpm.c */; };
+		71E51DF12BDFC51B00FC6AD1 /* cstp.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DBB2BDFC4BA00FC6AD1 /* cstp.c */; };
+		71E51DF22BDFC51B00FC6AD1 /* dtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DBD2BDFC4BA00FC6AD1 /* dtls.c */; };
+		71E51DF32BDFC51B00FC6AD1 /* externc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DBF2BDFC4BA00FC6AD1 /* externc.mm */; };
+		71E51DF42BDFC51B00FC6AD1 /* digest.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DBC2BDFC4BA00FC6AD1 /* digest.c */; };
+		71E51DF52BDFC52C00FC6AD1 /* gnutls_tpm2.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC32BDFC4BA00FC6AD1 /* gnutls_tpm2.c */; };
+		71E51DF62BDFC54100FC6AD1 /* gnutls-dtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC42BDFC4BA00FC6AD1 /* gnutls-dtls.c */; };
+		71E51DF72BDFC54900FC6AD1 /* gpst.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC82BDFC4BA00FC6AD1 /* gpst.c */; };
+		71E51DF82BDFC55900FC6AD1 /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DCA2BDFC4BA00FC6AD1 /* http.c */; };
+		71E51DF92BDFC55900FC6AD1 /* library.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DCB2BDFC4BA00FC6AD1 /* library.c */; };
+		71E51DFA2BDFC55900FC6AD1 /* http-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC92BDFC4BA00FC6AD1 /* http-auth.c */; };
+		71E51DFB2BDFC55900FC6AD1 /* lzo.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DCC2BDFC4BA00FC6AD1 /* lzo.c */; };
+		71E51DFC2BDFC56A00FC6AD1 /* ntlm.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DD02BDFC4BA00FC6AD1 /* ntlm.c */; };
+		71E51DFD2BDFC56A00FC6AD1 /* oncp.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DD22BDFC4BA00FC6AD1 /* oncp.c */; };
+		71E51DFE2BDFC56A00FC6AD1 /* lzs.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DCE2BDFC4BA00FC6AD1 /* lzs.c */; };
+		71E51DFF2BDFC56A00FC6AD1 /* mainloop.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DCF2BDFC4BA00FC6AD1 /* mainloop.c */; };
+		71E51E002BDFC56A00FC6AD1 /* oath.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DD12BDFC4BA00FC6AD1 /* oath.c */; };
+		71E51E012BDFC57A00FC6AD1 /* OpenConnectVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DDC2BDFC4BA00FC6AD1 /* OpenConnectVPNError.m */; };
+		71E51E022BDFC57B00FC6AD1 /* OpenConnectVPNError.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DDC2BDFC4BA00FC6AD1 /* OpenConnectVPNError.m */; };
+		71E51E032BDFC58300FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DDE2BDFC4BA00FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.m */; };
+		71E51E042BDFC58B00FC6AD1 /* OpenConnectVPNPacket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE02BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.mm */; };
+		71E51E052BDFC58C00FC6AD1 /* OpenConnectVPNPacket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE02BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.mm */; };
+		71E51E062BDFC59300FC6AD1 /* OpenConnectVPNPacketFlowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE22BDFC4BA00FC6AD1 /* OpenConnectVPNPacketFlowBridge.mm */; };
+		71E51E072BDFC59E00FC6AD1 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE52BDFC4BA00FC6AD1 /* ssl.c */; };
+		71E51E082BDFC59E00FC6AD1 /* tun.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE62BDFC4BA00FC6AD1 /* tun.c */; };
+		71E51E092BDFC59E00FC6AD1 /* script.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE42BDFC4BA00FC6AD1 /* script.c */; };
+		71E51E0B2BDFC5AE00FC6AD1 /* open_connect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DA62BDFC4BA00FC6AD1 /* open_connect.cpp */; };
+		71E51E0C2BDFC5B800FC6AD1 /* OpenAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DA92BDFC4BA00FC6AD1 /* OpenAdapter.mm */; };
+		71E51E0D2BDFC5C000FC6AD1 /* OpenClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DAC2BDFC4BA00FC6AD1 /* OpenClient.mm */; };
+		71E51E0E2BDFC5C800FC6AD1 /* OpenNetworkSettingsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DAE2BDFC4BA00FC6AD1 /* OpenNetworkSettingsBuilder.m */; };
+		71E51E0F2BDFC5D400FC6AD1 /* OpenPacket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB02BDFC4BA00FC6AD1 /* OpenPacket.mm */; };
+		71E51E102BDFC5D400FC6AD1 /* OpenPacketFlowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DB22BDFC4BA00FC6AD1 /* OpenPacketFlowBridge.mm */; };
+		71E51E122BDFC5DC00FC6AD1 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DE72BDFC4BA00FC6AD1 /* xml.c */; };
+		71E51F822BDFCA1C00FC6AD1 /* gnutls.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E51DC62BDFC4BA00FC6AD1 /* gnutls.c */; };
+		71E522172BE0B52200FC6AD1 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522132BE0B50400FC6AD1 /* libcrypto.a */; };
+		71E522182BE0B52200FC6AD1 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522152BE0B50400FC6AD1 /* libgmp.a */; };
+		71E522192BE0B52200FC6AD1 /* libgnutls-openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522162BE0B50400FC6AD1 /* libgnutls-openssl.a */; };
+		71E5221A2BE0B52200FC6AD1 /* libgnutls-xssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522122BE0B50400FC6AD1 /* libgnutls-xssl.a */; };
+		71E5221B2BE0B52200FC6AD1 /* libgnutls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E5220C2BE0B50400FC6AD1 /* libgnutls.a */; };
+		71E5221C2BE0B52200FC6AD1 /* libgnutlsxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522112BE0B50400FC6AD1 /* libgnutlsxx.a */; };
+		71E5221D2BE0B52200FC6AD1 /* libhogweed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E5220D2BE0B50400FC6AD1 /* libhogweed.a */; };
+		71E5221E2BE0B52200FC6AD1 /* libnettle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522102BE0B50400FC6AD1 /* libnettle.a */; };
+		71E5221F2BE0B52200FC6AD1 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E5220F2BE0B50400FC6AD1 /* libssl.a */; };
+		71E522202BE0B52200FC6AD1 /* libtasn1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E5220E2BE0B50400FC6AD1 /* libtasn1.a */; };
+		71E522222BE0BAF200FC6AD1 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E522142BE0B50400FC6AD1 /* libwg-go.a */; };
+		71E83EEA2BBBC05F0095B437 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E83EE92BBBC05F0095B437 /* Extension.swift */; };
+		71EF0CB52BD651F500D039A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71EF0CB22BD6509700D039A4 /* Main.storyboard */; };
+		71EF0CB82BD67D1600D039A4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF0CB72BD67D1600D039A4 /* APIManager.swift */; };
+		71FA55F42BBD2A18003E72FB /* X2TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FA55F32BBD2A18003E72FB /* X2TabBar.swift */; };
+		71FB547F2BEDEBE6009890A9 /* FeedbackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB547E2BEDEBE6009890A9 /* FeedbackResponse.swift */; };
+		71FB54812BEDEC1D009890A9 /* FeedbackKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54802BEDEC1D009890A9 /* FeedbackKeywords.swift */; };
+		71FB54832BEDEC51009890A9 /* FeedbackEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54822BEDEC51009890A9 /* FeedbackEmoji.swift */; };
+		71FB549C2BEE1F17009890A9 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB549B2BEE1F17009890A9 /* NotificationService.m */; };
+		71FB54A02BEE1F17009890A9 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71FB54982BEE1F17009890A9 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71FB54A62BEE40EB009890A9 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54A52BEE40EB009890A9 /* Offer.swift */; };
+		71FB54CD2BFB159A009890A9 /* CellForCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54CC2BFB1599009890A9 /* CellForCountry.swift */; };
+		71FB54CF2BFB1638009890A9 /* CellForLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54CE2BFB1638009890A9 /* CellForLocation.swift */; };
+		71FB54D12BFB1691009890A9 /* CellForFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FB54D02BFB1691009890A9 /* CellForFav.swift */; };
+		71FE74CB2BD683E600234D90 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE74CA2BD683E600234D90 /* APIResponse.swift */; };
+		AD152DA7E1297D41FBBCF8DA /* Pods_X2NetworkExtensioniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6A1347AC2EA5CCFD314407 /* Pods_X2NetworkExtensioniOS.framework */; };
+		C8D55794CF34EC1C0ACC2E0E /* Pods_X2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1720298BD148A285C001AE /* Pods_X2iOS.framework */; };
+		D2A0A62C2C411D3A004494D1 /* connect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A0A62A2C411D3A004494D1 /* connect.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F5D0C20218352EF000F85AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF4AC0C211EC46F002C96EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F5D0C19218352EF000F85AD;
+			remoteInfo = WireGuardNetworkExtension;
+		};
+		71B464522BD9154500491735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF4AC0C211EC46F002C96EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71B464492BD9154500491735;
+			remoteInfo = ConnectTunnel;
+		};
+		71FB549E2BEE1F17009890A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF4AC0C211EC46F002C96EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71FB54972BEE1F17009890A9;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F5D0C26218352EF000F85AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F5D0C22218352EF000F85AD /* X2NetworkExtension.appex in Embed App Extensions */,
+				71FB54A02BEE1F17009890A9 /* NotificationServiceExtension.appex in Embed App Extensions */,
+				71B464542BD9154500491735 /* ConnectTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B339F3263EDAD338F79CC0A /* Pods_ConnectTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FFF026992DD182EF2381CF /* Pods-X2NetworkExtensioniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X2NetworkExtensioniOS.release.xcconfig"; path = "Target Support Files/Pods-X2NetworkExtensioniOS/Pods-X2NetworkExtensioniOS.release.xcconfig"; sourceTree = "<group>"; };
+		58233BCE2591F842002060A8 /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		585B10462577E293004F691E /* InterfaceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceConfiguration.swift; sourceTree = "<group>"; };
+		585B10472577E293004F691E /* PeerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConfiguration.swift; sourceTree = "<group>"; };
+		585B10482577E293004F691E /* DNSServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
+		585B10492577E293004F691E /* TunnelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelConfiguration.swift; sourceTree = "<group>"; };
+		585B104B2577E293004F691E /* WireGuardAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireGuardAdapter.swift; sourceTree = "<group>"; };
+		585B104C2577E293004F691E /* Array+ConcurrentMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+ConcurrentMap.swift"; sourceTree = "<group>"; };
+		585B104D2577E293004F691E /* DNSResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
+		585B104E2577E293004F691E /* IPAddress+AddrInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPAddress+AddrInfo.swift"; sourceTree = "<group>"; };
+		585B104F2577E293004F691E /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		585B10502577E293004F691E /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
+		585B10512577E293004F691E /* IPAddressRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressRange.swift; sourceTree = "<group>"; };
+		585B10522577E293004F691E /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		585B10542577E293004F691E /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
+		585B10552577E293004F691E /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		585B10562577E293004F691E /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
+		585B10572577E293004F691E /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		585B10592577E293004F691E /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
+		5892BF9F25558288000E678D /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		59777EC46A91BB1DF47356AB /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5F45417C21C1B23600994C13 /* UITableViewCell+Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reuse.swift"; sourceTree = "<group>"; };
+		5F45418B21C2D48200994C13 /* TunnelEditKeyValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelEditKeyValueCell.swift; sourceTree = "<group>"; };
+		5F45418F21C2D53800994C13 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		5F45419121C2D55800994C13 /* CheckmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkCell.swift; sourceTree = "<group>"; };
+		5F45419721C2D60500994C13 /* KeyValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueCell.swift; sourceTree = "<group>"; };
+		5F45419F21C2D6B700994C13 /* TunnelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelListCell.swift; sourceTree = "<group>"; };
+		5F4541A121C2D6DF00994C13 /* BorderedTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextButton.swift; sourceTree = "<group>"; };
+		5F4541A521C4449E00994C13 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		5F4541A821C451D100994C13 /* TunnelStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelStatus.swift; sourceTree = "<group>"; };
+		5F4541B121CBFAEE00994C13 /* String+ArrayConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
+		5F52D0BA21E3781B00283CEA /* ConfTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfTextView.swift; sourceTree = "<group>"; };
+		5F52D0BC21E3785C00283CEA /* ConfTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfTextStorage.swift; sourceTree = "<group>"; };
+		5F52D0BE21E3788900283CEA /* NSColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		5F52D0C021E378C000283CEA /* highlighter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = highlighter.h; sourceTree = "<group>"; };
+		5F52D0C121E378C000283CEA /* highlighter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = highlighter.c; sourceTree = "<group>"; };
+		5F9696AF21CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
+		674A9442A8404CF7D1BF34A4 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5C5E26220A48D30024272E /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		6B62E45E220A6FA900EF34A6 /* PrivateDataConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataConfirmation.swift; sourceTree = "<group>"; };
+		6B6956352211DA80001B618A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B707D8321F918D4000A8F73 /* TunnelConfiguration+UapiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+UapiConfig.swift"; sourceTree = "<group>"; };
+		6F0F44C8222D55BB00B0FF04 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		6F0F44CA222D55FD00B0FF04 /* EditableTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableTextCell.swift; sourceTree = "<group>"; };
+		6F1075632258AE9800D78929 /* DeleteTunnelsConfirmationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTunnelsConfirmationAlert.swift; sourceTree = "<group>"; };
+		6F19D30322402B8700A126F2 /* ConfirmationAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationAlertPresenter.swift; sourceTree = "<group>"; };
+		6F2449E7226587B80047B9E9 /* MacAppStoreUpdateDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppStoreUpdateDetector.swift; sourceTree = "<group>"; };
+		6F29A9422278518D00DC6A6B /* RecentTunnelsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTunnelsTracker.swift; sourceTree = "<group>"; };
+		6F29A94622787B1600DC6A6B /* QuickActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickActionItem.swift; sourceTree = "<group>"; };
+		6F3E02E8228000F6001FE7E3 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		6F4DD16721DA552B00690EAE /* NSTableView+Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Reuse.swift"; sourceTree = "<group>"; };
+		6F4DD16A21DA558800690EAE /* TunnelListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelListRow.swift; sourceTree = "<group>"; };
+		6F4DD16D21DBEA0700690EAE /* ManageTunnelsRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTunnelsRootViewController.swift; sourceTree = "<group>"; };
+		6F5A2B4421AFDE020081EDD8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		6F5D0C1A218352EF000F85AD /* X2NetworkExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = X2NetworkExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5D0C1E218352EF000F85AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardNetworkExtension_iOS.entitlements; sourceTree = "<group>"; };
+		6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F5EA59A223E58A8002B380A /* ButtonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRow.swift; sourceTree = "<group>"; };
+		6F613D9A21DE33B8004B217A /* KeyValueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueRow.swift; sourceTree = "<group>"; };
+		6F61F1E821B932F700483816 /* WireGuardAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardAppError.swift; sourceTree = "<group>"; };
+		6F61F1EA21B937EF00483816 /* WireGuardResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardResult.swift; sourceTree = "<group>"; };
+		6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
+		6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelDetailTableViewController.swift; sourceTree = "<group>"; };
+		6F6483E6229293300075BA15 /* LaunchedAtLoginDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchedAtLoginDetector.swift; sourceTree = "<group>"; };
+		6F689999218043390012E523 /* WireGuard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuard-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F70E20D221058DF008BDFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Sources/WireGuardApp/Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F70E23222106A31008BDFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F70E23922109BEF008BDFB4 /* LoginItemHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginItemHelper.entitlements; sourceTree = "<group>"; };
+		6F7774DF217181B1006A79B3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6F7774E0217181B1006A79B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F7774E321718281006A79B3 /* TunnelsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelsListTableViewController.swift; sourceTree = "<group>"; };
+		6F7774EE21722D97006A79B3 /* TunnelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelsManager.swift; sourceTree = "<group>"; };
+		6F7774F221774263006A79B3 /* TunnelEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelEditTableViewController.swift; sourceTree = "<group>"; };
+		6F7F7E5E21C7D74B00527607 /* TunnelErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelErrors.swift; sourceTree = "<group>"; };
+		6F89E17921EDEB0E00C97BB9 /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		6F89E17B21F090CC00C97BB9 /* TunnelsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelsTracker.swift; sourceTree = "<group>"; };
+		6F8F0D7022258153000E8335 /* ActivateOnDemandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateOnDemandViewModel.swift; sourceTree = "<group>"; };
+		6F8F0D7322267AD2000E8335 /* ChevronCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronCell.swift; sourceTree = "<group>"; };
+		6F8F0D7622267C57000E8335 /* SSIDOptionEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSIDOptionEditTableViewController.swift; sourceTree = "<group>"; };
+		6F907C9B224663A2003CED21 /* LogViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewHelper.swift; sourceTree = "<group>"; };
+		6F919EC2218A2AE90023B400 /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		6F919ED5218C65C50023B400 /* wireguard_doc_logo_22x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireguard_doc_logo_22x29.png; sourceTree = "<group>"; };
+		6F919ED6218C65C50023B400 /* wireguard_doc_logo_44x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireguard_doc_logo_44x58.png; sourceTree = "<group>"; };
+		6F919ED7218C65C50023B400 /* wireguard_doc_logo_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireguard_doc_logo_64x64.png; sourceTree = "<group>"; };
+		6F919ED8218C65C50023B400 /* wireguard_doc_logo_320x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireguard_doc_logo_320x320.png; sourceTree = "<group>"; };
+		6F9B8A8D223398610041B9C4 /* SSIDOptionDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSIDOptionDetailTableViewController.swift; sourceTree = "<group>"; };
+		6FADE96A2254A6C200B838A4 /* UnusableTunnelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnusableTunnelDetailViewController.swift; sourceTree = "<group>"; };
+		6FB1017821C57DE600766195 /* MockTunnels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTunnels.swift; sourceTree = "<group>"; };
+		6FB17945222FD5960018AE71 /* OnDemandWiFiControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDemandWiFiControls.swift; sourceTree = "<group>"; };
+		6FB1BD5F21D2607A00A991BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FB1BD6121D2607E00A991BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FB1BD6621D2607E00A991BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB1BD6721D2607E00A991BF /* WireGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuard.entitlements; sourceTree = "<group>"; };
+		6FB1BD9621D4BFE700A991BF /* WireGuardNetworkExtension_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardNetworkExtension_macOS.entitlements; sourceTree = "<group>"; };
+		6FBA101321D613F30051C35F /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		6FBA101621D655340051C35F /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
+		6FBA103A21D6B4280051C35F /* ErrorPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPresenterProtocol.swift; sourceTree = "<group>"; };
+		6FBA103D21D6B6D70051C35F /* TunnelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelImporter.swift; sourceTree = "<group>"; };
+		6FBA104121D6BC210051C35F /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		6FBA104521D7EBFA0051C35F /* TunnelsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelsListTableViewController.swift; sourceTree = "<group>"; };
+		6FCD99A821E0E0C700BA4C82 /* ButtonedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonedDetailViewController.swift; sourceTree = "<group>"; };
+		6FCD99AE21E0EA1700BA4C82 /* ImportPanelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPanelPresenter.swift; sourceTree = "<group>"; };
+		6FCD99B021E0EDA900BA4C82 /* TunnelEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelEditViewController.swift; sourceTree = "<group>"; };
+		6FDB3C3A21DCF47400A0C0BF /* TunnelDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelDetailTableViewController.swift; sourceTree = "<group>"; };
+		6FDB6D12224A15BE00EE4BC3 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		6FDB6D14224CB2CE00EE4BC3 /* LogViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewCell.swift; sourceTree = "<group>"; };
+		6FDB6D16224CC04E00EE4BC3 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		6FDEF7F621863B6100D8FBF6 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		6FDEF7F721863B6100D8FBF6 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		6FDEF7F921863B6100D8FBF6 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		6FDEF7FA21863B6100D8FBF6 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		6FDEF7FE21863C0100D8FBF6 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		6FDEF7FF21863C0100D8FBF6 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		6FDEF801218646B900D8FBF6 /* ZipArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
+		6FDEF805218725D200D8FBF6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		6FE1765521C90BBE002690EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Sources/WireGuardApp/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FE1765921C90E87002690EA /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		6FE254FA219C10800028284D /* ZipImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipImporter.swift; sourceTree = "<group>"; };
+		6FE254FE219C60290028284D /* ZipExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipExporter.swift; sourceTree = "<group>"; };
+		6FE3661C21F64F6B00F78C7D /* ConfTextColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfTextColorTheme.swift; sourceTree = "<group>"; };
+		6FF3526B21C23F960008484E /* ringlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringlogger.h; sourceTree = "<group>"; };
+		6FF3526C21C23F960008484E /* ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ringlogger.c; sourceTree = "<group>"; };
+		6FF3526E21C23FA10008484E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		6FF4AC14211EC46F002C96EB /* X2VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X2VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF4AC1E211EC472002C96EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FF4AC21211EC472002C96EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen2.storyboard; sourceTree = "<group>"; };
+		6FF4AC23211EC472002C96EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF4AC2B211EC776002C96EB /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Config/Config.xcconfig; sourceTree = "<group>"; };
+		6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		6FF4AC482120B9E0002C96EB /* WireGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuard.entitlements; sourceTree = "<group>"; };
+		6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
+		6FFA5D9F21958ECC0001E2F7 /* ErrorNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
+		6FFA5DA32197085D0001E2F7 /* ActivateOnDemandOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateOnDemandOption.swift; sourceTree = "<group>"; };
+		6FFACD1E21E4D89600E9A2A5 /* ParseError+WireGuardAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParseError+WireGuardAppError.swift"; sourceTree = "<group>"; };
+		710C34082BD7B0AB00E51246 /* IPBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPBundle.swift; sourceTree = "<group>"; };
+		710C340A2BD7B0EC00E51246 /* InAppVPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppVPN.swift; sourceTree = "<group>"; };
+		710C340C2BD7B11700E51246 /* InAppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppFeature.swift; sourceTree = "<group>"; };
+		710C340E2BD7B13900E51246 /* InAppPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPayment.swift; sourceTree = "<group>"; };
+		710C34102BD7B14F00E51246 /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
+		710C34122BD7B17200E51246 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		710C34142BD7BFDD00E51246 /* X2Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Splash.swift; sourceTree = "<group>"; };
+		71106EA952A75AB6CB8A4B2E /* Pods-X2NetworkExtensioniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X2NetworkExtensioniOS.debug.xcconfig"; path = "Target Support Files/Pods-X2NetworkExtensioniOS/Pods-X2NetworkExtensioniOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7130868E2BE4CA64009C936A /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		7130868F2BE4CA64009C936A /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		713086902BE4CA64009C936A /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		713086912BE4CA64009C936A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		713086922BE4CA64009C936A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		7142EDEB2BE35C08001CB458 /* X2Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Login.swift; sourceTree = "<group>"; };
+		714CB6D72BE8D4090004AECF /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		714CB6D92BE8D43E0004AECF /* DeviceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceResponse.swift; sourceTree = "<group>"; };
+		714CB6DC2BE8D7690004AECF /* CellForDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForDevice.swift; sourceTree = "<group>"; };
+		714CB6DE2BE8FB1E0004AECF /* X2CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2CreateAccount.swift; sourceTree = "<group>"; };
+		714CB6E02BE8FB410004AECF /* X2UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2UserDetails.swift; sourceTree = "<group>"; };
+		714CB6E22BE8FB700004AECF /* X2SignUpOtp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2SignUpOtp.swift; sourceTree = "<group>"; };
+		714CB6E42BE8FB820004AECF /* X2SignUpConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2SignUpConfirmation.swift; sourceTree = "<group>"; };
+		714CB6E62BEA03B10004AECF /* X2ForgetPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2ForgetPass.swift; sourceTree = "<group>"; };
+		714CB6E82BEA210E0004AECF /* X2ForgetPassOtp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2ForgetPassOtp.swift; sourceTree = "<group>"; };
+		714CB6EA2BEA2BD30004AECF /* X2SetNewPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2SetNewPass.swift; sourceTree = "<group>"; };
+		714CB6EC2BEA3A8B0004AECF /* X2PasswordConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2PasswordConfirmation.swift; sourceTree = "<group>"; };
+		714EBCA12BE3A93900D690EC /* X2TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2TabBarHome.swift; sourceTree = "<group>"; };
+		714EBCA32BE3A96E00D690EC /* X2TabBarServerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2TabBarServerList.swift; sourceTree = "<group>"; };
+		714EBCA52BE3A99700D690EC /* X2TabBarSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2TabBarSetting.swift; sourceTree = "<group>"; };
+		714EBCA72BE3A9AF00D690EC /* X2TabBarProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2TabBarProfile.swift; sourceTree = "<group>"; };
+		714EBCA92BE3AA5200D690EC /* X2Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Device.swift; sourceTree = "<group>"; };
+		715237862BB54343004D494F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7167860D2C1088260089354E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7167860F2C1196FA0089354E /* X2DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2DeleteAccount.swift; sourceTree = "<group>"; };
+		7168340E2BDA0DB4001E6886 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		716834102BDA0DE0001E6886 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		716834122BDA0FA8001E6886 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		716834142BDA0FC6001E6886 /* ErrorObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorObj.swift; sourceTree = "<group>"; };
+		716834162BDA1963001E6886 /* JHNetworkSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNetworkSpeed.h; sourceTree = "<group>"; };
+		716834172BDA1963001E6886 /* JHNetworkSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkSpeed.m; sourceTree = "<group>"; };
+		716834212BDA83F8001E6886 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7171F3972BE3AF9B002CA12B /* X2Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Feedback.swift; sourceTree = "<group>"; };
+		7171F3992BE3B4B7002CA12B /* X2AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2AboutApp.swift; sourceTree = "<group>"; };
+		7171F39B2BE3B509002CA12B /* X2PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2PrivacyPolicy.swift; sourceTree = "<group>"; };
+		7171F39D2BE3B847002CA12B /* X2ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2ChangePassword.swift; sourceTree = "<group>"; };
+		7171F39F2BE3B86B002CA12B /* X2Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Pricing.swift; sourceTree = "<group>"; };
+		717839122C0DDC7800BD03B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Sources/WireGuardApp/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		718222382BD8C6CD004541B9 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		71968EF12BD22ECB0029231C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71A7B1FE2BE34AC800B268AA /* X2Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2Slide.swift; sourceTree = "<group>"; };
+		71B3DD292C11BB8100E3F6C1 /* CellForPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForPrice.swift; sourceTree = "<group>"; };
+		71B4644A2BD9154500491735 /* ConnectTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ConnectTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B4644D2BD9154500491735 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		71B4644E2BD9154500491735 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		71B464502BD9154500491735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71B464512BD9154500491735 /* ConnectTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConnectTunnel.entitlements; sourceTree = "<group>"; };
+		71D017032C09CA220062A3D2 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		71E51DA52BDFC4BA00FC6AD1 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		71E51DA62BDFC4BA00FC6AD1 /* open_connect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = open_connect.cpp; sourceTree = "<group>"; };
+		71E51DA72BDFC4BA00FC6AD1 /* open_connect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = open_connect.hpp; sourceTree = "<group>"; };
+		71E51DA82BDFC4BA00FC6AD1 /* OpenAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenAdapter.h; sourceTree = "<group>"; };
+		71E51DA92BDFC4BA00FC6AD1 /* OpenAdapter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenAdapter.mm; sourceTree = "<group>"; };
+		71E51DAA2BDFC4BA00FC6AD1 /* OpenAdapterPacketFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenAdapterPacketFlow.h; sourceTree = "<group>"; };
+		71E51DAB2BDFC4BA00FC6AD1 /* OpenClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenClient.h; sourceTree = "<group>"; };
+		71E51DAC2BDFC4BA00FC6AD1 /* OpenClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenClient.mm; sourceTree = "<group>"; };
+		71E51DAD2BDFC4BA00FC6AD1 /* OpenNetworkSettingsBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenNetworkSettingsBuilder.h; sourceTree = "<group>"; };
+		71E51DAE2BDFC4BA00FC6AD1 /* OpenNetworkSettingsBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenNetworkSettingsBuilder.m; sourceTree = "<group>"; };
+		71E51DAF2BDFC4BA00FC6AD1 /* OpenPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPacket.h; sourceTree = "<group>"; };
+		71E51DB02BDFC4BA00FC6AD1 /* OpenPacket.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPacket.mm; sourceTree = "<group>"; };
+		71E51DB12BDFC4BA00FC6AD1 /* OpenPacketFlowBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPacketFlowBridge.h; sourceTree = "<group>"; };
+		71E51DB22BDFC4BA00FC6AD1 /* OpenPacketFlowBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPacketFlowBridge.mm; sourceTree = "<group>"; };
+		71E51DB42BDFC4BA00FC6AD1 /* auth-common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "auth-common.c"; sourceTree = "<group>"; };
+		71E51DB52BDFC4BA00FC6AD1 /* auth-globalprotect.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "auth-globalprotect.c"; sourceTree = "<group>"; };
+		71E51DB62BDFC4BA00FC6AD1 /* auth-juniper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "auth-juniper.c"; sourceTree = "<group>"; };
+		71E51DB72BDFC4BA00FC6AD1 /* auth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
+		71E51DB82BDFC4BA00FC6AD1 /* client.ovpn */ = {isa = PBXFileReference; lastKnownFileType = text; path = client.ovpn; sourceTree = "<group>"; };
+		71E51DBA2BDFC4BA00FC6AD1 /* cplus_objectivec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cplus_objectivec.h; sourceTree = "<group>"; };
+		71E51DBB2BDFC4BA00FC6AD1 /* cstp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cstp.c; sourceTree = "<group>"; };
+		71E51DBC2BDFC4BA00FC6AD1 /* digest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = digest.c; sourceTree = "<group>"; };
+		71E51DBD2BDFC4BA00FC6AD1 /* dtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dtls.c; sourceTree = "<group>"; };
+		71E51DBE2BDFC4BA00FC6AD1 /* externc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = externc.hpp; sourceTree = "<group>"; };
+		71E51DBF2BDFC4BA00FC6AD1 /* externc.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = externc.mm; sourceTree = "<group>"; };
+		71E51DC02BDFC4BA00FC6AD1 /* gnutls_tpm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gnutls_tpm.c; sourceTree = "<group>"; };
+		71E51DC12BDFC4BA00FC6AD1 /* gnutls_tpm2_esys.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gnutls_tpm2_esys.c; sourceTree = "<group>"; };
+		71E51DC22BDFC4BA00FC6AD1 /* gnutls_tpm2_ibm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gnutls_tpm2_ibm.c; sourceTree = "<group>"; };
+		71E51DC32BDFC4BA00FC6AD1 /* gnutls_tpm2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gnutls_tpm2.c; sourceTree = "<group>"; };
+		71E51DC42BDFC4BA00FC6AD1 /* gnutls-dtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "gnutls-dtls.c"; sourceTree = "<group>"; };
+		71E51DC52BDFC4BA00FC6AD1 /* gnutls-esp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "gnutls-esp.c"; sourceTree = "<group>"; };
+		71E51DC62BDFC4BA00FC6AD1 /* gnutls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gnutls.c; sourceTree = "<group>"; };
+		71E51DC72BDFC4BA00FC6AD1 /* gnutls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gnutls.h; sourceTree = "<group>"; };
+		71E51DC82BDFC4BA00FC6AD1 /* gpst.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gpst.c; sourceTree = "<group>"; };
+		71E51DC92BDFC4BA00FC6AD1 /* http-auth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "http-auth.c"; sourceTree = "<group>"; };
+		71E51DCA2BDFC4BA00FC6AD1 /* http.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
+		71E51DCB2BDFC4BA00FC6AD1 /* library.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = library.c; sourceTree = "<group>"; };
+		71E51DCC2BDFC4BA00FC6AD1 /* lzo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lzo.c; sourceTree = "<group>"; };
+		71E51DCD2BDFC4BA00FC6AD1 /* lzo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lzo.h; sourceTree = "<group>"; };
+		71E51DCE2BDFC4BA00FC6AD1 /* lzs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lzs.c; sourceTree = "<group>"; };
+		71E51DCF2BDFC4BA00FC6AD1 /* mainloop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mainloop.c; sourceTree = "<group>"; };
+		71E51DD02BDFC4BA00FC6AD1 /* ntlm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ntlm.c; sourceTree = "<group>"; };
+		71E51DD12BDFC4BA00FC6AD1 /* oath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oath.c; sourceTree = "<group>"; };
+		71E51DD22BDFC4BA00FC6AD1 /* oncp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oncp.c; sourceTree = "<group>"; };
+		71E51DD32BDFC4BA00FC6AD1 /* openconnect-internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openconnect-internal.h"; sourceTree = "<group>"; };
+		71E51DD42BDFC4BA00FC6AD1 /* openconnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = openconnect.h; sourceTree = "<group>"; };
+		71E51DD52BDFC4BA00FC6AD1 /* OpenConnectAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectAdapter.h; sourceTree = "<group>"; };
+		71E51DD62BDFC4BA00FC6AD1 /* OpenConnectAdapter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenConnectAdapter.mm; sourceTree = "<group>"; };
+		71E51DD72BDFC4BA00FC6AD1 /* OpenconnectClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenconnectClient.h; sourceTree = "<group>"; };
+		71E51DD82BDFC4BA00FC6AD1 /* OpenconnectClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenconnectClient.mm; sourceTree = "<group>"; };
+		71E51DD92BDFC4BA00FC6AD1 /* OpenConnectVPNAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNAdapter.h; sourceTree = "<group>"; };
+		71E51DDA2BDFC4BA00FC6AD1 /* OpenConnectVPNAdapterPacketFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNAdapterPacketFlow.h; sourceTree = "<group>"; };
+		71E51DDB2BDFC4BA00FC6AD1 /* OpenConnectVPNError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNError.h; sourceTree = "<group>"; };
+		71E51DDC2BDFC4BA00FC6AD1 /* OpenConnectVPNError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenConnectVPNError.m; sourceTree = "<group>"; };
+		71E51DDD2BDFC4BA00FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNNetworkSettingsBuilder.h; sourceTree = "<group>"; };
+		71E51DDE2BDFC4BA00FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenConnectVPNNetworkSettingsBuilder.m; sourceTree = "<group>"; };
+		71E51DDF2BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNPacket.h; sourceTree = "<group>"; };
+		71E51DE02BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenConnectVPNPacket.mm; sourceTree = "<group>"; };
+		71E51DE12BDFC4BA00FC6AD1 /* OpenConnectVPNPacketFlowBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenConnectVPNPacketFlowBridge.h; sourceTree = "<group>"; };
+		71E51DE22BDFC4BA00FC6AD1 /* OpenConnectVPNPacketFlowBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenConnectVPNPacketFlowBridge.mm; sourceTree = "<group>"; };
+		71E51DE32BDFC4BA00FC6AD1 /* pulse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pulse.c; sourceTree = "<group>"; };
+		71E51DE42BDFC4BA00FC6AD1 /* script.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = script.c; sourceTree = "<group>"; };
+		71E51DE52BDFC4BA00FC6AD1 /* ssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ssl.c; sourceTree = "<group>"; };
+		71E51DE62BDFC4BA00FC6AD1 /* tun.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tun.c; sourceTree = "<group>"; };
+		71E51DE72BDFC4BA00FC6AD1 /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		71E5220C2BE0B50400FC6AD1 /* libgnutls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgnutls.a; path = lib/libgnutls.a; sourceTree = "<group>"; };
+		71E5220D2BE0B50400FC6AD1 /* libhogweed.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhogweed.a; path = lib/libhogweed.a; sourceTree = "<group>"; };
+		71E5220E2BE0B50400FC6AD1 /* libtasn1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtasn1.a; path = lib/libtasn1.a; sourceTree = "<group>"; };
+		71E5220F2BE0B50400FC6AD1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		71E522102BE0B50400FC6AD1 /* libnettle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnettle.a; path = lib/libnettle.a; sourceTree = "<group>"; };
+		71E522112BE0B50400FC6AD1 /* libgnutlsxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgnutlsxx.a; path = lib/libgnutlsxx.a; sourceTree = "<group>"; };
+		71E522122BE0B50400FC6AD1 /* libgnutls-xssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgnutls-xssl.a"; path = "lib/libgnutls-xssl.a"; sourceTree = "<group>"; };
+		71E522132BE0B50400FC6AD1 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		71E522142BE0B50400FC6AD1 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "lib/libwg-go.a"; sourceTree = "<group>"; };
+		71E522152BE0B50400FC6AD1 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = lib/libgmp.a; sourceTree = "<group>"; };
+		71E522162BE0B50400FC6AD1 /* libgnutls-openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgnutls-openssl.a"; path = "lib/libgnutls-openssl.a"; sourceTree = "<group>"; };
+		71E83EE92BBBC05F0095B437 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		71EF0CB22BD6509700D039A4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		71EF0CB72BD67D1600D039A4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		71FA55F32BBD2A18003E72FB /* X2TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X2TabBar.swift; sourceTree = "<group>"; };
+		71FB547E2BEDEBE6009890A9 /* FeedbackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackResponse.swift; sourceTree = "<group>"; };
+		71FB54802BEDEC1D009890A9 /* FeedbackKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackKeywords.swift; sourceTree = "<group>"; };
+		71FB54822BEDEC51009890A9 /* FeedbackEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackEmoji.swift; sourceTree = "<group>"; };
+		71FB54982BEE1F17009890A9 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FB549A2BEE1F17009890A9 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		71FB549B2BEE1F17009890A9 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		71FB549D2BEE1F17009890A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FB54A42BEE1F1E009890A9 /* NotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		71FB54A52BEE40EB009890A9 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		71FB54CC2BFB1599009890A9 /* CellForCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForCountry.swift; sourceTree = "<group>"; };
+		71FB54CE2BFB1638009890A9 /* CellForLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForLocation.swift; sourceTree = "<group>"; };
+		71FB54D02BFB1691009890A9 /* CellForFav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForFav.swift; sourceTree = "<group>"; };
+		71FE74CA2BD683E600234D90 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		768A3CC60740755B43A94908 /* Pods-ConnectTunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectTunnel.debug.xcconfig"; path = "Target Support Files/Pods-ConnectTunnel/Pods-ConnectTunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		7D17D55B0792E5BE13A6369F /* Pods-ConnectTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectTunnel.release.xcconfig"; path = "Target Support Files/Pods-ConnectTunnel/Pods-ConnectTunnel.release.xcconfig"; sourceTree = "<group>"; };
+		974BBAE0A841CC05D18A1133 /* Pods-X2iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X2iOS.debug.xcconfig"; path = "Target Support Files/Pods-X2iOS/Pods-X2iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB6A1347AC2EA5CCFD314407 /* Pods_X2NetworkExtensioniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_X2NetworkExtensioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A0A62B2C411D3A004494D1 /* connect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = connect.xcdatamodel; sourceTree = "<group>"; };
+		DB482D868CAD1431B929E179 /* Pods-X2iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X2iOS.release.xcconfig"; path = "Target Support Files/Pods-X2iOS/Pods-X2iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DDF0907CE975AAA3879F93AE /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		FB1720298BD148A285C001AE /* Pods_X2iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_X2iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F5D0C17218352EF000F85AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5CA6B1220DE4E900F126CF /* NetworkExtension.framework in Frameworks */,
+				71E522222BE0BAF200FC6AD1 /* libwg-go.a in Frameworks */,
+				AD152DA7E1297D41FBBCF8DA /* Pods_X2NetworkExtensioniOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF4AC11211EC46F002C96EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7167860E2C1088260089354E /* StoreKit.framework in Frameworks */,
+				6B653B86220DE2960050E69C /* NetworkExtension.framework in Frameworks */,
+				C8D55794CF34EC1C0ACC2E0E /* Pods_X2iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B464472BD9154500491735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E5221C2BE0B52200FC6AD1 /* libgnutlsxx.a in Frameworks */,
+				71E5221B2BE0B52200FC6AD1 /* libgnutls.a in Frameworks */,
+				71E5221F2BE0B52200FC6AD1 /* libssl.a in Frameworks */,
+				71E5221A2BE0B52200FC6AD1 /* libgnutls-xssl.a in Frameworks */,
+				71B4644B2BD9154500491735 /* NetworkExtension.framework in Frameworks */,
+				71E522182BE0B52200FC6AD1 /* libgmp.a in Frameworks */,
+				71E522202BE0B52200FC6AD1 /* libtasn1.a in Frameworks */,
+				71E522172BE0B52200FC6AD1 /* libcrypto.a in Frameworks */,
+				71E5221E2BE0B52200FC6AD1 /* libnettle.a in Frameworks */,
+				71E5221D2BE0B52200FC6AD1 /* libhogweed.a in Frameworks */,
+				71E522192BE0B52200FC6AD1 /* libgnutls-openssl.a in Frameworks */,
+				652D737B003422242F2FC3CC /* Pods_ConnectTunnel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FB54952BEE1F17009890A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158CF5A6BF33FA779498BBCC /* Pods_NotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		585B10452577E293004F691E /* WireGuardKit */ = {
+			isa = PBXGroup;
+			children = (
+				585B104C2577E293004F691E /* Array+ConcurrentMap.swift */,
+				585B104D2577E293004F691E /* DNSResolver.swift */,
+				585B10482577E293004F691E /* DNSServer.swift */,
+				585B10522577E293004F691E /* Endpoint.swift */,
+				585B10462577E293004F691E /* InterfaceConfiguration.swift */,
+				585B104E2577E293004F691E /* IPAddress+AddrInfo.swift */,
+				585B10512577E293004F691E /* IPAddressRange.swift */,
+				585B10502577E293004F691E /* PacketTunnelSettingsGenerator.swift */,
+				585B10472577E293004F691E /* PeerConfiguration.swift */,
+				585B104F2577E293004F691E /* PrivateKey.swift */,
+				585B10492577E293004F691E /* TunnelConfiguration.swift */,
+				585B104B2577E293004F691E /* WireGuardAdapter.swift */,
+			);
+			name = WireGuardKit;
+			path = Sources/WireGuardKit;
+			sourceTree = "<group>";
+		};
+		585B10532577E293004F691E /* WireGuardKitC */ = {
+			isa = PBXGroup;
+			children = (
+				585B10572577E293004F691E /* key.c */,
+				585B10552577E293004F691E /* key.h */,
+				585B10542577E293004F691E /* WireGuardKitC.h */,
+				585B10562577E293004F691E /* x25519.c */,
+				585B10592577E293004F691E /* x25519.h */,
+			);
+			name = WireGuardKitC;
+			path = Sources/WireGuardKitC;
+			sourceTree = "<group>";
+		};
+		5CDB164A72C68C7FB35FC0E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				768A3CC60740755B43A94908 /* Pods-ConnectTunnel.debug.xcconfig */,
+				7D17D55B0792E5BE13A6369F /* Pods-ConnectTunnel.release.xcconfig */,
+				DDF0907CE975AAA3879F93AE /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				59777EC46A91BB1DF47356AB /* Pods-NotificationServiceExtension.release.xcconfig */,
+				71106EA952A75AB6CB8A4B2E /* Pods-X2NetworkExtensioniOS.debug.xcconfig */,
+				51FFF026992DD182EF2381CF /* Pods-X2NetworkExtensioniOS.release.xcconfig */,
+				974BBAE0A841CC05D18A1133 /* Pods-X2iOS.debug.xcconfig */,
+				DB482D868CAD1431B929E179 /* Pods-X2iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F4541A721C44F5B00994C13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F45419F21C2D6B700994C13 /* TunnelListCell.swift */,
+				5F45418B21C2D48200994C13 /* TunnelEditKeyValueCell.swift */,
+				5F45418F21C2D53800994C13 /* SwitchCell.swift */,
+				5F45419721C2D60500994C13 /* KeyValueCell.swift */,
+				5F4541A521C4449E00994C13 /* ButtonCell.swift */,
+				5F45419121C2D55800994C13 /* CheckmarkCell.swift */,
+				5F4541A121C2D6DF00994C13 /* BorderedTextButton.swift */,
+				6F8F0D7322267AD2000E8335 /* ChevronCell.swift */,
+				6F0F44C8222D55BB00B0FF04 /* TextCell.swift */,
+				6F0F44CA222D55FD00B0FF04 /* EditableTextCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F4541AC21C4720B00994C13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6F7774E321718281006A79B3 /* TunnelsListTableViewController.swift */,
+				6F7774F221774263006A79B3 /* TunnelEditTableViewController.swift */,
+				6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */,
+				6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */,
+				6FDEF805218725D200D8FBF6 /* SettingsTableViewController.swift */,
+				6F7774DF217181B1006A79B3 /* MainViewController.swift */,
+				6F8F0D7622267C57000E8335 /* SSIDOptionEditTableViewController.swift */,
+				6F9B8A8D223398610041B9C4 /* SSIDOptionDetailTableViewController.swift */,
+				6FDB6D16224CC04E00EE4BC3 /* LogViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6F4DD16921DA556600690EAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F52D0C021E378C000283CEA /* highlighter.h */,
+				5F52D0C121E378C000283CEA /* highlighter.c */,
+				6F4DD16A21DA558800690EAE /* TunnelListRow.swift */,
+				6F613D9A21DE33B8004B217A /* KeyValueRow.swift */,
+				5F52D0BA21E3781B00283CEA /* ConfTextView.swift */,
+				5F52D0BC21E3785C00283CEA /* ConfTextStorage.swift */,
+				6FE3661C21F64F6B00F78C7D /* ConfTextColorTheme.swift */,
+				6F5EA59A223E58A8002B380A /* ButtonRow.swift */,
+				6FB17945222FD5960018AE71 /* OnDemandWiFiControls.swift */,
+				6FDB6D14224CB2CE00EE4BC3 /* LogViewCell.swift */,
+				6F1075632258AE9800D78929 /* DeleteTunnelsConfirmationAlert.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D0C1E218352EF000F85AD /* Info.plist */,
+				6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension_iOS.entitlements */,
+				6FB1BD9621D4BFE700A991BF /* WireGuardNetworkExtension_macOS.entitlements */,
+				6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-Bridging-Header.h */,
+				6FFA5D9F21958ECC0001E2F7 /* ErrorNotifier.swift */,
+				5892BF9F25558288000E678D /* PacketTunnelProvider.swift */,
+			);
+			name = WireGuardNetworkExtension;
+			path = Sources/WireGuardNetworkExtension;
+			sourceTree = "<group>";
+		};
+		6F5D0C432183B4A4000F85AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6FF3526A21C23F720008484E /* Logging */,
+				6F7774E6217201E0006A79B3 /* Model */,
+				6F5A2B4421AFDE020081EDD8 /* FileManager+Extension.swift */,
+				6B5C5E26220A48D30024272E /* Keychain.swift */,
+				58233BCE2591F842002060A8 /* NotificationToken.swift */,
+			);
+			name = Shared;
+			path = Sources/Shared;
+			sourceTree = "<group>";
+		};
+		6F70E22A22106A2D008BDFB4 /* LoginItemHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6F70E23922109BEF008BDFB4 /* LoginItemHelper.entitlements */,
+				6F70E23222106A31008BDFB4 /* Info.plist */,
+				6B6956352211DA80001B618A /* main.m */,
+			);
+			path = LoginItemHelper;
+			sourceTree = "<group>";
+		};
+		6F7774DD217181B1006A79B3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6F8F0D7022258153000E8335 /* ActivateOnDemandViewModel.swift */,
+				6FBA103A21D6B4280051C35F /* ErrorPresenterProtocol.swift */,
+				6F7774DE217181B1006A79B3 /* iOS */,
+				6F907C9B224663A2003CED21 /* LogViewHelper.swift */,
+				6FB1BD5E21D2607A00A991BF /* macOS */,
+				6B62E45E220A6FA900EF34A6 /* PrivateDataConfirmation.swift */,
+				6FBA103D21D6B6D70051C35F /* TunnelImporter.swift */,
+				6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6F7774DE217181B1006A79B3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F19D30322402B8700A126F2 /* ConfirmationAlertPresenter.swift */,
+				6F919EC2218A2AE90023B400 /* ErrorPresenter.swift */,
+				6FF4AC23211EC472002C96EB /* Info.plist */,
+				6FF4AC20211EC472002C96EB /* LaunchScreen2.storyboard */,
+				6F29A94622787B1600DC6A6B /* QuickActionItem.swift */,
+				6F29A9422278518D00DC6A6B /* RecentTunnelsTracker.swift */,
+				5F45417C21C1B23600994C13 /* UITableViewCell+Reuse.swift */,
+				5F4541A721C44F5B00994C13 /* View */,
+				5F4541AC21C4720B00994C13 /* ViewController */,
+				6FF4AC482120B9E0002C96EB /* WireGuard.entitlements */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		6F7774E6217201E0006A79B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F9696AF21CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift */,
+				6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */,
+				5F4541B121CBFAEE00994C13 /* String+ArrayConversion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F7774ED21722D0C006A79B3 /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				6F7774EE21722D97006A79B3 /* TunnelsManager.swift */,
+				6B707D8321F918D4000A8F73 /* TunnelConfiguration+UapiConfig.swift */,
+				6FFA5DA32197085D0001E2F7 /* ActivateOnDemandOption.swift */,
+				5F4541A821C451D100994C13 /* TunnelStatus.swift */,
+				6FB1017821C57DE600766195 /* MockTunnels.swift */,
+				6F7F7E5E21C7D74B00527607 /* TunnelErrors.swift */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		6F919ED3218C65C50023B400 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F919ED4218C65C50023B400 /* DocumentIcons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F919ED4218C65C50023B400 /* DocumentIcons */ = {
+			isa = PBXGroup;
+			children = (
+				6F919ED5218C65C50023B400 /* wireguard_doc_logo_22x29.png */,
+				6F919ED6218C65C50023B400 /* wireguard_doc_logo_44x58.png */,
+				6F919ED7218C65C50023B400 /* wireguard_doc_logo_64x64.png */,
+				6F919ED8218C65C50023B400 /* wireguard_doc_logo_320x320.png */,
+			);
+			path = DocumentIcons;
+			sourceTree = "<group>";
+		};
+		6FB1BD5E21D2607A00A991BF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F70E22A22106A2D008BDFB4 /* LoginItemHelper */,
+				6F4DD16921DA556600690EAE /* View */,
+				6FBA104421D7EA750051C35F /* ViewController */,
+				6FBA101321D613F30051C35F /* Application.swift */,
+				6FB1BD5F21D2607A00A991BF /* AppDelegate.swift */,
+				6F89E17921EDEB0E00C97BB9 /* StatusItemController.swift */,
+				6FBA101621D655340051C35F /* StatusMenu.swift */,
+				6F3E02E8228000F6001FE7E3 /* MainMenu.swift */,
+				6F89E17B21F090CC00C97BB9 /* TunnelsTracker.swift */,
+				6FBA104121D6BC210051C35F /* ErrorPresenter.swift */,
+				6FCD99AE21E0EA1700BA4C82 /* ImportPanelPresenter.swift */,
+				6F2449E7226587B80047B9E9 /* MacAppStoreUpdateDetector.swift */,
+				6F6483E6229293300075BA15 /* LaunchedAtLoginDetector.swift */,
+				6FB1BD6121D2607E00A991BF /* Assets.xcassets */,
+				6FB1BD6621D2607E00A991BF /* Info.plist */,
+				6FB1BD6721D2607E00A991BF /* WireGuard.entitlements */,
+				6F4DD16721DA552B00690EAE /* NSTableView+Reuse.swift */,
+				5F52D0BE21E3788900283CEA /* NSColor+Hex.swift */,
+				6FFACD1E21E4D89600E9A2A5 /* ParseError+WireGuardAppError.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		6FBA104421D7EA750051C35F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6FBA104521D7EBFA0051C35F /* TunnelsListTableViewController.swift */,
+				6F4DD16D21DBEA0700690EAE /* ManageTunnelsRootViewController.swift */,
+				6FDB3C3A21DCF47400A0C0BF /* TunnelDetailTableViewController.swift */,
+				6FCD99A821E0E0C700BA4C82 /* ButtonedDetailViewController.swift */,
+				6FCD99B021E0EDA900BA4C82 /* TunnelEditViewController.swift */,
+				6FDB6D12224A15BE00EE4BC3 /* LogViewController.swift */,
+				6FADE96A2254A6C200B838A4 /* UnusableTunnelDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6FDEF7E72186320E00D8FBF6 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				6FE254FA219C10800028284D /* ZipImporter.swift */,
+				6FE254FE219C60290028284D /* ZipExporter.swift */,
+				6FDEF801218646B900D8FBF6 /* ZipArchive.swift */,
+				6FDEF7F421863B6100D8FBF6 /* 3rdparty */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		6FDEF7F421863B6100D8FBF6 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEF7F521863B6100D8FBF6 /* minizip */,
+			);
+			path = 3rdparty;
+			sourceTree = "<group>";
+		};
+		6FDEF7F521863B6100D8FBF6 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				6FDEF7FF21863C0100D8FBF6 /* ioapi.c */,
+				6FDEF7FE21863C0100D8FBF6 /* ioapi.h */,
+				6FDEF7F621863B6100D8FBF6 /* unzip.c */,
+				6FDEF7FA21863B6100D8FBF6 /* unzip.h */,
+				6FDEF7F721863B6100D8FBF6 /* zip.c */,
+				6FDEF7F921863B6100D8FBF6 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		6FF3526A21C23F720008484E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				6FF3526C21C23F960008484E /* ringlogger.c */,
+				6FF3526B21C23F960008484E /* ringlogger.h */,
+				6FF3526E21C23FA10008484E /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		6FF4AC0B211EC46F002C96EB = {
+			isa = PBXGroup;
+			children = (
+				71B4644C2BD9154500491735 /* ConnectTunnel */,
+				6FF4AC452120B9E0002C96EB /* Frameworks */,
+				6F70E20C221058DF008BDFB4 /* InfoPlist.strings */,
+				6FE1765421C90BBE002690EA /* Localizable.strings */,
+				71FB54992BEE1F17009890A9 /* NotificationServiceExtension */,
+				71E51DE82BDFC4BA00FC6AD1 /* OpenConnect */,
+				5CDB164A72C68C7FB35FC0E5 /* Pods */,
+				6FF4AC15211EC46F002C96EB /* Products */,
+				6F5D0C432183B4A4000F85AD /* Shared */,
+				6FF4AC16211EC46F002C96EB /* WireGuardApp */,
+				585B10452577E293004F691E /* WireGuardKit */,
+				585B10532577E293004F691E /* WireGuardKitC */,
+				6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension */,
+				715237762BB53F79004D494F /* X2VPN */,
+			);
+			sourceTree = "<group>";
+		};
+		6FF4AC15211EC46F002C96EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4AC14211EC46F002C96EB /* X2VPN.app */,
+				6F5D0C1A218352EF000F85AD /* X2NetworkExtension.appex */,
+				71B4644A2BD9154500491735 /* ConnectTunnel.appex */,
+				71FB54982BEE1F17009890A9 /* NotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FF4AC16211EC46F002C96EB /* WireGuardApp */ = {
+			isa = PBXGroup;
+			children = (
+				6FF4AC2B211EC776002C96EB /* Config.xcconfig */,
+				6FE1765921C90E87002690EA /* LocalizationHelper.swift */,
+				6F919ED3218C65C50023B400 /* Resources */,
+				6F7774ED21722D0C006A79B3 /* Tunnel */,
+				6F7774DD217181B1006A79B3 /* UI */,
+				6F689999218043390012E523 /* WireGuard-Bridging-Header.h */,
+				6F61F1E821B932F700483816 /* WireGuardAppError.swift */,
+				6F61F1EA21B937EF00483816 /* WireGuardResult.swift */,
+				6FDEF7E72186320E00D8FBF6 /* ZipArchive */,
+			);
+			name = WireGuardApp;
+			path = Sources/WireGuardApp;
+			sourceTree = "<group>";
+		};
+		6FF4AC452120B9E0002C96EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7167860D2C1088260089354E /* StoreKit.framework */,
+				71E522132BE0B50400FC6AD1 /* libcrypto.a */,
+				71E522152BE0B50400FC6AD1 /* libgmp.a */,
+				71E522162BE0B50400FC6AD1 /* libgnutls-openssl.a */,
+				71E522122BE0B50400FC6AD1 /* libgnutls-xssl.a */,
+				71E5220C2BE0B50400FC6AD1 /* libgnutls.a */,
+				71E522112BE0B50400FC6AD1 /* libgnutlsxx.a */,
+				71E5220D2BE0B50400FC6AD1 /* libhogweed.a */,
+				71E522102BE0B50400FC6AD1 /* libnettle.a */,
+				71E5220F2BE0B50400FC6AD1 /* libssl.a */,
+				71E5220E2BE0B50400FC6AD1 /* libtasn1.a */,
+				71E522142BE0B50400FC6AD1 /* libwg-go.a */,
+				6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */,
+				2B339F3263EDAD338F79CC0A /* Pods_ConnectTunnel.framework */,
+				674A9442A8404CF7D1BF34A4 /* Pods_NotificationServiceExtension.framework */,
+				AB6A1347AC2EA5CCFD314407 /* Pods_X2NetworkExtensioniOS.framework */,
+				FB1720298BD148A285C001AE /* Pods_X2iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7130868D2BE4CA38009C936A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7130868F2BE4CA64009C936A /* Inter-Bold.ttf */,
+				713086902BE4CA64009C936A /* Inter-Light.ttf */,
+				7130868E2BE4CA64009C936A /* Inter-Medium.ttf */,
+				713086922BE4CA64009C936A /* Inter-Regular.ttf */,
+				713086912BE4CA64009C936A /* Inter-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		714CB6DB2BE8D74F0004AECF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				714CB6DC2BE8D7690004AECF /* CellForDevice.swift */,
+				71FB54CC2BFB1599009890A9 /* CellForCountry.swift */,
+				71FB54CE2BFB1638009890A9 /* CellForLocation.swift */,
+				71FB54D02BFB1691009890A9 /* CellForFav.swift */,
+				71B3DD292C11BB8100E3F6C1 /* CellForPrice.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		715237762BB53F79004D494F /* X2VPN */ = {
+			isa = PBXGroup;
+			children = (
+				716834182BDA1963001E6886 /* JHNetworkSpeed */,
+				6F7774E0217181B1006A79B3 /* AppDelegate.swift */,
+				715237862BB54343004D494F /* SceneDelegate.swift */,
+				7130868D2BE4CA38009C936A /* Font */,
+				71968EF12BD22ECB0029231C /* LaunchScreen.storyboard */,
+				71EF0CB22BD6509700D039A4 /* Main.storyboard */,
+				6FF4AC1E211EC472002C96EB /* Assets.xcassets */,
+				71D017032C09CA220062A3D2 /* animation.json */,
+				714CB6DB2BE8D74F0004AECF /* Cell */,
+				715237782BB53FC6004D494F /* Models */,
+				715237772BB53FB2004D494F /* Controllers */,
+			);
+			path = X2VPN;
+			sourceTree = "<group>";
+		};
+		715237772BB53FB2004D494F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71EF0CB62BD67CAF00D039A4 /* TabBarClasses */,
+				7171F3992BE3B4B7002CA12B /* X2AboutApp.swift */,
+				7171F39D2BE3B847002CA12B /* X2ChangePassword.swift */,
+				714CB6DE2BE8FB1E0004AECF /* X2CreateAccount.swift */,
+				7167860F2C1196FA0089354E /* X2DeleteAccount.swift */,
+				714EBCA92BE3AA5200D690EC /* X2Device.swift */,
+				7171F3972BE3AF9B002CA12B /* X2Feedback.swift */,
+				714CB6E62BEA03B10004AECF /* X2ForgetPass.swift */,
+				714CB6E82BEA210E0004AECF /* X2ForgetPassOtp.swift */,
+				7142EDEB2BE35C08001CB458 /* X2Login.swift */,
+				714CB6EC2BEA3A8B0004AECF /* X2PasswordConfirmation.swift */,
+				7171F39F2BE3B86B002CA12B /* X2Pricing.swift */,
+				7171F39B2BE3B509002CA12B /* X2PrivacyPolicy.swift */,
+				714CB6EA2BEA2BD30004AECF /* X2SetNewPass.swift */,
+				714CB6E42BE8FB820004AECF /* X2SignUpConfirmation.swift */,
+				714CB6E22BE8FB700004AECF /* X2SignUpOtp.swift */,
+				71A7B1FE2BE34AC800B268AA /* X2Slide.swift */,
+				710C34142BD7BFDD00E51246 /* X2Splash.swift */,
+				714CB6E02BE8FB410004AECF /* X2UserDetails.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		715237782BB53FC6004D494F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71EF0CB72BD67D1600D039A4 /* APIManager.swift */,
+				71FE74CA2BD683E600234D90 /* APIResponse.swift */,
+				710C34102BD7B14F00E51246 /* BannerData.swift */,
+				718222382BD8C6CD004541B9 /* CityCell.swift */,
+				716834212BDA83F8001E6886 /* Country.swift */,
+				714CB6D72BE8D4090004AECF /* Device.swift */,
+				714CB6D92BE8D43E0004AECF /* DeviceResponse.swift */,
+				716834142BDA0FC6001E6886 /* ErrorObj.swift */,
+				71E83EE92BBBC05F0095B437 /* Extension.swift */,
+				71FB54822BEDEC51009890A9 /* FeedbackEmoji.swift */,
+				71FB54802BEDEC1D009890A9 /* FeedbackKeywords.swift */,
+				71FB547E2BEDEBE6009890A9 /* FeedbackResponse.swift */,
+				716834122BDA0FA8001E6886 /* GeneralResponse.swift */,
+				710C340C2BD7B11700E51246 /* InAppFeature.swift */,
+				710C340E2BD7B13900E51246 /* InAppPayment.swift */,
+				710C340A2BD7B0EC00E51246 /* InAppVPN.swift */,
+				710C34082BD7B0AB00E51246 /* IPBundle.swift */,
+				71FB54A52BEE40EB009890A9 /* Offer.swift */,
+				716834102BDA0DE0001E6886 /* Receipt.swift */,
+				7168340E2BDA0DB4001E6886 /* StoreManager.swift */,
+				710C34122BD7B17200E51246 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		716834182BDA1963001E6886 /* JHNetworkSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				716834162BDA1963001E6886 /* JHNetworkSpeed.h */,
+				716834172BDA1963001E6886 /* JHNetworkSpeed.m */,
+			);
+			path = JHNetworkSpeed;
+			sourceTree = "<group>";
+		};
+		71B4644C2BD9154500491735 /* ConnectTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				71B4644D2BD9154500491735 /* PacketTunnelProvider.h */,
+				71B4644E2BD9154500491735 /* PacketTunnelProvider.m */,
+				71B464502BD9154500491735 /* Info.plist */,
+				71B464512BD9154500491735 /* ConnectTunnel.entitlements */,
+			);
+			path = ConnectTunnel;
+			sourceTree = "<group>";
+		};
+		71E51DB32BDFC4BA00FC6AD1 /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				71E51DA52BDFC4BA00FC6AD1 /* base.h */,
+				71E51DA62BDFC4BA00FC6AD1 /* open_connect.cpp */,
+				71E51DA72BDFC4BA00FC6AD1 /* open_connect.hpp */,
+				71E51DA82BDFC4BA00FC6AD1 /* OpenAdapter.h */,
+				71E51DA92BDFC4BA00FC6AD1 /* OpenAdapter.mm */,
+				71E51DAA2BDFC4BA00FC6AD1 /* OpenAdapterPacketFlow.h */,
+				71E51DAB2BDFC4BA00FC6AD1 /* OpenClient.h */,
+				71E51DAC2BDFC4BA00FC6AD1 /* OpenClient.mm */,
+				71E51DAD2BDFC4BA00FC6AD1 /* OpenNetworkSettingsBuilder.h */,
+				71E51DAE2BDFC4BA00FC6AD1 /* OpenNetworkSettingsBuilder.m */,
+				71E51DAF2BDFC4BA00FC6AD1 /* OpenPacket.h */,
+				71E51DB02BDFC4BA00FC6AD1 /* OpenPacket.mm */,
+				71E51DB12BDFC4BA00FC6AD1 /* OpenPacketFlowBridge.h */,
+				71E51DB22BDFC4BA00FC6AD1 /* OpenPacketFlowBridge.mm */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		71E51DE82BDFC4BA00FC6AD1 /* OpenConnect */ = {
+			isa = PBXGroup;
+			children = (
+				D2A0A62A2C411D3A004494D1 /* connect.xcdatamodeld */,
+				71E51DB42BDFC4BA00FC6AD1 /* auth-common.c */,
+				71E51DB52BDFC4BA00FC6AD1 /* auth-globalprotect.c */,
+				71E51DB62BDFC4BA00FC6AD1 /* auth-juniper.c */,
+				71E51DB72BDFC4BA00FC6AD1 /* auth.c */,
+				71E51DB82BDFC4BA00FC6AD1 /* client.ovpn */,
+				71E51DBA2BDFC4BA00FC6AD1 /* cplus_objectivec.h */,
+				71E51DBB2BDFC4BA00FC6AD1 /* cstp.c */,
+				71E51DBC2BDFC4BA00FC6AD1 /* digest.c */,
+				71E51DBD2BDFC4BA00FC6AD1 /* dtls.c */,
+				71E51DBE2BDFC4BA00FC6AD1 /* externc.hpp */,
+				71E51DBF2BDFC4BA00FC6AD1 /* externc.mm */,
+				71E51DC02BDFC4BA00FC6AD1 /* gnutls_tpm.c */,
+				71E51DC12BDFC4BA00FC6AD1 /* gnutls_tpm2_esys.c */,
+				71E51DC22BDFC4BA00FC6AD1 /* gnutls_tpm2_ibm.c */,
+				71E51DC32BDFC4BA00FC6AD1 /* gnutls_tpm2.c */,
+				71E51DC42BDFC4BA00FC6AD1 /* gnutls-dtls.c */,
+				71E51DC52BDFC4BA00FC6AD1 /* gnutls-esp.c */,
+				71E51DC62BDFC4BA00FC6AD1 /* gnutls.c */,
+				71E51DC72BDFC4BA00FC6AD1 /* gnutls.h */,
+				71E51DC82BDFC4BA00FC6AD1 /* gpst.c */,
+				71E51DC92BDFC4BA00FC6AD1 /* http-auth.c */,
+				71E51DCA2BDFC4BA00FC6AD1 /* http.c */,
+				71E51DCB2BDFC4BA00FC6AD1 /* library.c */,
+				71E51DCC2BDFC4BA00FC6AD1 /* lzo.c */,
+				71E51DCD2BDFC4BA00FC6AD1 /* lzo.h */,
+				71E51DCE2BDFC4BA00FC6AD1 /* lzs.c */,
+				71E51DCF2BDFC4BA00FC6AD1 /* mainloop.c */,
+				71E51DD02BDFC4BA00FC6AD1 /* ntlm.c */,
+				71E51DD12BDFC4BA00FC6AD1 /* oath.c */,
+				71E51DD22BDFC4BA00FC6AD1 /* oncp.c */,
+				71E51DD32BDFC4BA00FC6AD1 /* openconnect-internal.h */,
+				71E51DD42BDFC4BA00FC6AD1 /* openconnect.h */,
+				71E51DD52BDFC4BA00FC6AD1 /* OpenConnectAdapter.h */,
+				71E51DD62BDFC4BA00FC6AD1 /* OpenConnectAdapter.mm */,
+				71E51DD72BDFC4BA00FC6AD1 /* OpenconnectClient.h */,
+				71E51DD82BDFC4BA00FC6AD1 /* OpenconnectClient.mm */,
+				71E51DD92BDFC4BA00FC6AD1 /* OpenConnectVPNAdapter.h */,
+				71E51DDA2BDFC4BA00FC6AD1 /* OpenConnectVPNAdapterPacketFlow.h */,
+				71E51DDB2BDFC4BA00FC6AD1 /* OpenConnectVPNError.h */,
+				71E51DDC2BDFC4BA00FC6AD1 /* OpenConnectVPNError.m */,
+				71E51DDD2BDFC4BA00FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.h */,
+				71E51DDE2BDFC4BA00FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.m */,
+				71E51DDF2BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.h */,
+				71E51DE02BDFC4BA00FC6AD1 /* OpenConnectVPNPacket.mm */,
+				71E51DE12BDFC4BA00FC6AD1 /* OpenConnectVPNPacketFlowBridge.h */,
+				71E51DE22BDFC4BA00FC6AD1 /* OpenConnectVPNPacketFlowBridge.mm */,
+				71E51DE32BDFC4BA00FC6AD1 /* pulse.c */,
+				71E51DE42BDFC4BA00FC6AD1 /* script.c */,
+				71E51DE52BDFC4BA00FC6AD1 /* ssl.c */,
+				71E51DE62BDFC4BA00FC6AD1 /* tun.c */,
+				71E51DB32BDFC4BA00FC6AD1 /* wrapper */,
+				71E51DE72BDFC4BA00FC6AD1 /* xml.c */,
+			);
+			path = OpenConnect;
+			sourceTree = "<group>";
+		};
+		71EF0CB62BD67CAF00D039A4 /* TabBarClasses */ = {
+			isa = PBXGroup;
+			children = (
+				71FA55F32BBD2A18003E72FB /* X2TabBar.swift */,
+				714EBCA12BE3A93900D690EC /* X2TabBarHome.swift */,
+				714EBCA32BE3A96E00D690EC /* X2TabBarServerList.swift */,
+				714EBCA52BE3A99700D690EC /* X2TabBarSetting.swift */,
+				714EBCA72BE3A9AF00D690EC /* X2TabBarProfile.swift */,
+			);
+			path = TabBarClasses;
+			sourceTree = "<group>";
+		};
+		71FB54992BEE1F17009890A9 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				71FB54A42BEE1F1E009890A9 /* NotificationServiceExtension.entitlements */,
+				71FB549A2BEE1F17009890A9 /* NotificationService.h */,
+				71FB549B2BEE1F17009890A9 /* NotificationService.m */,
+				71FB549D2BEE1F17009890A9 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F5D0C19218352EF000F85AD /* X2NetworkExtensioniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "X2NetworkExtensioniOS" */;
+			buildPhases = (
+				9409EBA8F15E379DE1CAEE93 /* [CP] Check Pods Manifest.lock */,
+				6F5D0C16218352EF000F85AD /* Sources */,
+				6F5D0C17218352EF000F85AD /* Frameworks */,
+				6F5D0C18218352EF000F85AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = X2NetworkExtensioniOS;
+			productName = WireGuardNetworkExtension;
+			productReference = 6F5D0C1A218352EF000F85AD /* X2NetworkExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6FF4AC13211EC46F002C96EB /* X2iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "X2iOS" */;
+			buildPhases = (
+				D7F270EDAEA54783D8F6B6CC /* [CP] Check Pods Manifest.lock */,
+				5F784E5721CDF6DD00B8D9A0 /* Strip Trailing Whitespace */,
+				6FF4AC10211EC46F002C96EB /* Sources */,
+				6FF4AC11211EC46F002C96EB /* Frameworks */,
+				6FF4AC12211EC46F002C96EB /* Resources */,
+				6F5D0C26218352EF000F85AD /* Embed App Extensions */,
+				386D2349C2DF284D53D93503 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F5D0C21218352EF000F85AD /* PBXTargetDependency */,
+				71B464532BD9154500491735 /* PBXTargetDependency */,
+				71FB549F2BEE1F17009890A9 /* PBXTargetDependency */,
+			);
+			name = X2iOS;
+			productName = WireGuard;
+			productReference = 6FF4AC14211EC46F002C96EB /* X2VPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71B464492BD9154500491735 /* ConnectTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B464552BD9154500491735 /* Build configuration list for PBXNativeTarget "ConnectTunnel" */;
+			buildPhases = (
+				DE72FC4423D1058DF2E4F05D /* [CP] Check Pods Manifest.lock */,
+				71B464462BD9154500491735 /* Sources */,
+				71B464472BD9154500491735 /* Frameworks */,
+				71B464482BD9154500491735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectTunnel;
+			productName = ConnectTunnel;
+			productReference = 71B4644A2BD9154500491735 /* ConnectTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		71FB54972BEE1F17009890A9 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FB54A12BEE1F17009890A9 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				B597ECBC473C675C93243DD4 /* [CP] Check Pods Manifest.lock */,
+				71FB54942BEE1F17009890A9 /* Sources */,
+				71FB54952BEE1F17009890A9 /* Frameworks */,
+				71FB54962BEE1F17009890A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 71FB54982BEE1F17009890A9 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FF4AC0C211EC46F002C96EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "WireGuard LLC";
+				TargetAttributes = {
+					6F5D0C19218352EF000F85AD = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+					};
+					6FF4AC13211EC46F002C96EB = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					71B464492BD9154500491735 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					71FB54972BEE1F17009890A9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 6FF4AC0F211EC46F002C96EB /* Build configuration list for PBXProject "X2iOS" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6FF4AC0B211EC46F002C96EB;
+			productRefGroup = 6FF4AC15211EC46F002C96EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FF4AC13211EC46F002C96EB /* X2iOS */,
+				6F5D0C19218352EF000F85AD /* X2NetworkExtensioniOS */,
+				71B464492BD9154500491735 /* ConnectTunnel */,
+				71FB54972BEE1F17009890A9 /* NotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F5D0C18218352EF000F85AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF4AC12211EC46F002C96EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71EF0CB52BD651F500D039A4 /* Main.storyboard in Resources */,
+				71968EF32BD235000029231C /* LaunchScreen.storyboard in Resources */,
+				6F919ED9218C65C50023B400 /* wireguard_doc_logo_22x29.png in Resources */,
+				71D017042C09CA220062A3D2 /* animation.json in Resources */,
+				713086962BE4CA64009C936A /* Inter-SemiBold.ttf in Resources */,
+				713086942BE4CA64009C936A /* Inter-Bold.ttf in Resources */,
+				6F70E20E221058E1008BDFB4 /* InfoPlist.strings in Resources */,
+				6FE1765621C90BBE002690EA /* Localizable.strings in Resources */,
+				713086952BE4CA64009C936A /* Inter-Light.ttf in Resources */,
+				6FF4AC22211EC472002C96EB /* LaunchScreen2.storyboard in Resources */,
+				6F919EDA218C65C50023B400 /* wireguard_doc_logo_44x58.png in Resources */,
+				6FF4AC1F211EC472002C96EB /* Assets.xcassets in Resources */,
+				713086932BE4CA64009C936A /* Inter-Medium.ttf in Resources */,
+				71E51DEF2BDFC50300FC6AD1 /* client.ovpn in Resources */,
+				6F919EDB218C65C50023B400 /* wireguard_doc_logo_64x64.png in Resources */,
+				713086972BE4CA64009C936A /* Inter-Regular.ttf in Resources */,
+				6F919EDC218C65C50023B400 /* wireguard_doc_logo_320x320.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B464482BD9154500491735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FB54962BEE1F17009890A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		386D2349C2DF284D53D93503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-X2iOS/Pods-X2iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-X2iOS/Pods-X2iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-X2iOS/Pods-X2iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F784E5721CDF6DD00B8D9A0 /* Strip Trailing Whitespace */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Trailing Whitespace";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find . -name '*.swift' -exec sed -i '' -E 's/[[:space:]]+$//g' {} +\n";
+		};
+		9409EBA8F15E379DE1CAEE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-X2NetworkExtensioniOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B597ECBC473C675C93243DD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F270EDAEA54783D8F6B6CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-X2iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE72FC4423D1058DF2E4F05D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConnectTunnel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F5D0C16218352EF000F85AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF3527021C240160008484E /* ringlogger.c in Sources */,
+				585B106F2577E294004F691E /* WireGuardAdapter.swift in Sources */,
+				6FF3527121C240160008484E /* Logger.swift in Sources */,
+				6F5A2B4621AFDED40081EDD8 /* FileManager+Extension.swift in Sources */,
+				585B10772577E294004F691E /* DNSResolver.swift in Sources */,
+				585B10872577E294004F691E /* IPAddressRange.swift in Sources */,
+				6FFA5DA021958ECC0001E2F7 /* ErrorNotifier.swift in Sources */,
+				5F9696B121CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				585B10832577E294004F691E /* PacketTunnelSettingsGenerator.swift in Sources */,
+				585B105F2577E293004F691E /* PeerConfiguration.swift in Sources */,
+				585B107F2577E294004F691E /* PrivateKey.swift in Sources */,
+				585B10672577E294004F691E /* TunnelConfiguration.swift in Sources */,
+				585B108F2577E294004F691E /* x25519.c in Sources */,
+				6B5C5E28220A48D30024272E /* Keychain.swift in Sources */,
+				585B10932577E294004F691E /* key.c in Sources */,
+				585B105B2577E293004F691E /* InterfaceConfiguration.swift in Sources */,
+				585B107B2577E294004F691E /* IPAddress+AddrInfo.swift in Sources */,
+				6FFA5D96219446380001E2F7 /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				5F9696AE21CD6F72008063FE /* String+ArrayConversion.swift in Sources */,
+				585B10632577E293004F691E /* DNSServer.swift in Sources */,
+				5892BFA025558288000E678D /* PacketTunnelProvider.swift in Sources */,
+				585B108B2577E294004F691E /* Endpoint.swift in Sources */,
+				585B10732577E294004F691E /* Array+ConcurrentMap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF4AC10211EC46F002C96EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E83EEA2BBBC05F0095B437 /* Extension.swift in Sources */,
+				6FE1765A21C90E87002690EA /* LocalizationHelper.swift in Sources */,
+				716786102C1196FA0089354E /* X2DeleteAccount.swift in Sources */,
+				6F29A94722787B1600DC6A6B /* QuickActionItem.swift in Sources */,
+				585B105A2577E293004F691E /* InterfaceConfiguration.swift in Sources */,
+				6FF3527221C2616C0008484E /* ringlogger.c in Sources */,
+				6F0F44CB222D55FD00B0FF04 /* EditableTextCell.swift in Sources */,
+				585B105E2577E293004F691E /* PeerConfiguration.swift in Sources */,
+				714EBCA42BE3A96E00D690EC /* X2TabBarServerList.swift in Sources */,
+				6FF3527321C2616C0008484E /* Logger.swift in Sources */,
+				6F7774E421718281006A79B3 /* TunnelsListTableViewController.swift in Sources */,
+				585B108E2577E294004F691E /* x25519.c in Sources */,
+				6F7774EF21722D97006A79B3 /* TunnelsManager.swift in Sources */,
+				5F45417D21C1B23600994C13 /* UITableViewCell+Reuse.swift in Sources */,
+				5F45419221C2D55800994C13 /* CheckmarkCell.swift in Sources */,
+				6FE254FF219C60290028284D /* ZipExporter.swift in Sources */,
+				71FA55F42BBD2A18003E72FB /* X2TabBar.swift in Sources */,
+				6F8F0D7122258153000E8335 /* ActivateOnDemandViewModel.swift in Sources */,
+				6F8F0D7722267C57000E8335 /* SSIDOptionEditTableViewController.swift in Sources */,
+				585B10622577E293004F691E /* DNSServer.swift in Sources */,
+				6FDEF7E62185EFB200D8FBF6 /* QRScanViewController.swift in Sources */,
+				6FDB6D18224CC05A00EE4BC3 /* LogViewController.swift in Sources */,
+				6FFA5D952194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				714CB6DD2BE8D7690004AECF /* CellForDevice.swift in Sources */,
+				5F4541A921C451D100994C13 /* TunnelStatus.swift in Sources */,
+				71EF0CB82BD67D1600D039A4 /* APIManager.swift in Sources */,
+				71E51E022BDFC57B00FC6AD1 /* OpenConnectVPNError.m in Sources */,
+				6F8F0D7422267AD2000E8335 /* ChevronCell.swift in Sources */,
+				6F61F1E921B932F700483816 /* WireGuardAppError.swift in Sources */,
+				6F7774E2217181B1006A79B3 /* AppDelegate.swift in Sources */,
+				710C340B2BD7B0EC00E51246 /* InAppVPN.swift in Sources */,
+				6FDEF80021863C0100D8FBF6 /* ioapi.c in Sources */,
+				6F7F7E5F21C7D74B00527607 /* TunnelErrors.swift in Sources */,
+				6FDEF7FC21863B6100D8FBF6 /* zip.c in Sources */,
+				7171F39C2BE3B509002CA12B /* X2PrivacyPolicy.swift in Sources */,
+				6B5C5E27220A48D30024272E /* Keychain.swift in Sources */,
+				6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */,
+				5F4541A621C4449E00994C13 /* ButtonCell.swift in Sources */,
+				71FB54832BEDEC51009890A9 /* FeedbackEmoji.swift in Sources */,
+				71A7B1FF2BE34AC800B268AA /* X2Slide.swift in Sources */,
+				718222392BD8C6CD004541B9 /* CityCell.swift in Sources */,
+				71FB54CF2BFB1638009890A9 /* CellForLocation.swift in Sources */,
+				5F45419821C2D60500994C13 /* KeyValueCell.swift in Sources */,
+				714EBCA22BE3A93900D690EC /* X2TabBarHome.swift in Sources */,
+				6FBA103E21D6B6D70051C35F /* TunnelImporter.swift in Sources */,
+				6F9B8A8E223398610041B9C4 /* SSIDOptionDetailTableViewController.swift in Sources */,
+				71B3DD2A2C11BB8100E3F6C1 /* CellForPrice.swift in Sources */,
+				6F19D30422402B8700A126F2 /* ConfirmationAlertPresenter.swift in Sources */,
+				716834152BDA0FC6001E6886 /* ErrorObj.swift in Sources */,
+				6F919EC3218A2AE90023B400 /* ErrorPresenter.swift in Sources */,
+				71FB54CD2BFB159A009890A9 /* CellForCountry.swift in Sources */,
+				714CB6DA2BE8D43E0004AECF /* DeviceResponse.swift in Sources */,
+				71FB547F2BEDEBE6009890A9 /* FeedbackResponse.swift in Sources */,
+				716834192BDA1963001E6886 /* JHNetworkSpeed.m in Sources */,
+				7142EDEC2BE35C08001CB458 /* X2Login.swift in Sources */,
+				6B62E45F220A6FA900EF34A6 /* PrivateDataConfirmation.swift in Sources */,
+				714CB6E52BE8FB820004AECF /* X2SignUpConfirmation.swift in Sources */,
+				714CB6D82BE8D4090004AECF /* Device.swift in Sources */,
+				6F5A2B4821AFF49A0081EDD8 /* FileManager+Extension.swift in Sources */,
+				71E51E062BDFC59300FC6AD1 /* OpenConnectVPNPacketFlowBridge.mm in Sources */,
+				710C34112BD7B14F00E51246 /* BannerData.swift in Sources */,
+				5F45418C21C2D48200994C13 /* TunnelEditKeyValueCell.swift in Sources */,
+				7168340F2BDA0DB4001E6886 /* StoreManager.swift in Sources */,
+				71FE74CB2BD683E600234D90 /* APIResponse.swift in Sources */,
+				714CB6E32BE8FB700004AECF /* X2SignUpOtp.swift in Sources */,
+				71E51E032BDFC58300FC6AD1 /* OpenConnectVPNNetworkSettingsBuilder.m in Sources */,
+				6FE254FB219C10800028284D /* ZipImporter.swift in Sources */,
+				714CB6E92BEA210E0004AECF /* X2ForgetPassOtp.swift in Sources */,
+				714EBCA82BE3A9AF00D690EC /* X2TabBarProfile.swift in Sources */,
+				7171F3A02BE3B86B002CA12B /* X2Pricing.swift in Sources */,
+				585B107E2577E294004F691E /* PrivateKey.swift in Sources */,
+				6FDEF7FB21863B6100D8FBF6 /* unzip.c in Sources */,
+				6F29A9432278518D00DC6A6B /* RecentTunnelsTracker.swift in Sources */,
+				6F0F44C9222D55BB00B0FF04 /* TextCell.swift in Sources */,
+				5F4541A021C2D6B700994C13 /* TunnelListCell.swift in Sources */,
+				5F9696B021CD7128008063FE /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				71FB54A62BEE40EB009890A9 /* Offer.swift in Sources */,
+				71FB54D12BFB1691009890A9 /* CellForFav.swift in Sources */,
+				6F628C41217F47DB003482A3 /* TunnelDetailTableViewController.swift in Sources */,
+				6F61F1EB21B937EF00483816 /* WireGuardResult.swift in Sources */,
+				710C34152BD7BFDD00E51246 /* X2Splash.swift in Sources */,
+				710C34132BD7B17200E51246 /* User.swift in Sources */,
+				6F7774F321774263006A79B3 /* TunnelEditTableViewController.swift in Sources */,
+				6FBA103B21D6B4290051C35F /* ErrorPresenterProtocol.swift in Sources */,
+				58233BCF2591F842002060A8 /* NotificationToken.swift in Sources */,
+				710C340D2BD7B11700E51246 /* InAppFeature.swift in Sources */,
+				714CB6E12BE8FB410004AECF /* X2UserDetails.swift in Sources */,
+				716834112BDA0DE0001E6886 /* Receipt.swift in Sources */,
+				716834132BDA0FA8001E6886 /* GeneralResponse.swift in Sources */,
+				585B10862577E294004F691E /* IPAddressRange.swift in Sources */,
+				710C340F2BD7B13900E51246 /* InAppPayment.swift in Sources */,
+				714CB6EB2BEA2BD30004AECF /* X2SetNewPass.swift in Sources */,
+				716834222BDA83F8001E6886 /* Country.swift in Sources */,
+				7171F39A2BE3B4B7002CA12B /* X2AboutApp.swift in Sources */,
+				6FDEF802218646BA00D8FBF6 /* ZipArchive.swift in Sources */,
+				585B10922577E294004F691E /* key.c in Sources */,
+				714EBCAA2BE3AA5200D690EC /* X2Device.swift in Sources */,
+				5F45419021C2D53800994C13 /* SwitchCell.swift in Sources */,
+				71FB54812BEDEC1D009890A9 /* FeedbackKeywords.swift in Sources */,
+				7171F3982BE3AF9B002CA12B /* X2Feedback.swift in Sources */,
+				6FB1017921C57DE600766195 /* MockTunnels.swift in Sources */,
+				6B707D8421F918D4000A8F73 /* TunnelConfiguration+UapiConfig.swift in Sources */,
+				715237872BB54343004D494F /* SceneDelegate.swift in Sources */,
+				6FDEF806218725D200D8FBF6 /* SettingsTableViewController.swift in Sources */,
+				5F4541A221C2D6DF00994C13 /* BorderedTextButton.swift in Sources */,
+				585B10662577E294004F691E /* TunnelConfiguration.swift in Sources */,
+				714EBCA62BE3A99700D690EC /* X2TabBarSetting.swift in Sources */,
+				6F7774E1217181B1006A79B3 /* MainViewController.swift in Sources */,
+				714CB6E72BEA03B10004AECF /* X2ForgetPass.swift in Sources */,
+				6FFA5DA42197085D0001E2F7 /* ActivateOnDemandOption.swift in Sources */,
+				5F4541B221CBFAEE00994C13 /* String+ArrayConversion.swift in Sources */,
+				585B108A2577E294004F691E /* Endpoint.swift in Sources */,
+				7171F39E2BE3B847002CA12B /* X2ChangePassword.swift in Sources */,
+				6F907C9C224663A2003CED21 /* LogViewHelper.swift in Sources */,
+				710C34092BD7B0AB00E51246 /* IPBundle.swift in Sources */,
+				714CB6ED2BEA3A8B0004AECF /* X2PasswordConfirmation.swift in Sources */,
+				71E51E042BDFC58B00FC6AD1 /* OpenConnectVPNPacket.mm in Sources */,
+				D2A0A62C2C411D3A004494D1 /* connect.xcdatamodeld in Sources */,
+				714CB6DF2BE8FB1E0004AECF /* X2CreateAccount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B464462BD9154500491735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E51F822BDFCA1C00FC6AD1 /* gnutls.c in Sources */,
+				71E51DF72BDFC54900FC6AD1 /* gpst.c in Sources */,
+				71E51DEA2BDFC4F400FC6AD1 /* auth-common.c in Sources */,
+				71E51DF02BDFC51B00FC6AD1 /* gnutls_tpm.c in Sources */,
+				71E51DF12BDFC51B00FC6AD1 /* cstp.c in Sources */,
+				71E51DF82BDFC55900FC6AD1 /* http.c in Sources */,
+				71E51E122BDFC5DC00FC6AD1 /* xml.c in Sources */,
+				71E51DF92BDFC55900FC6AD1 /* library.c in Sources */,
+				71E51DFA2BDFC55900FC6AD1 /* http-auth.c in Sources */,
+				71E51DFB2BDFC55900FC6AD1 /* lzo.c in Sources */,
+				71E51DF22BDFC51B00FC6AD1 /* dtls.c in Sources */,
+				71E51DF32BDFC51B00FC6AD1 /* externc.mm in Sources */,
+				71E51DF42BDFC51B00FC6AD1 /* digest.c in Sources */,
+				71E51DEB2BDFC4F400FC6AD1 /* auth-globalprotect.c in Sources */,
+				71E51DF62BDFC54100FC6AD1 /* gnutls-dtls.c in Sources */,
+				71E51E0F2BDFC5D400FC6AD1 /* OpenPacket.mm in Sources */,
+				71E51E102BDFC5D400FC6AD1 /* OpenPacketFlowBridge.mm in Sources */,
+				71E51DEC2BDFC4F400FC6AD1 /* auth.c in Sources */,
+				71E51DF52BDFC52C00FC6AD1 /* gnutls_tpm2.c in Sources */,
+				71E51DFC2BDFC56A00FC6AD1 /* ntlm.c in Sources */,
+				71E51E0C2BDFC5B800FC6AD1 /* OpenAdapter.mm in Sources */,
+				71E51E0B2BDFC5AE00FC6AD1 /* open_connect.cpp in Sources */,
+				71E51DFD2BDFC56A00FC6AD1 /* oncp.c in Sources */,
+				71E51DFE2BDFC56A00FC6AD1 /* lzs.c in Sources */,
+				71E51E072BDFC59E00FC6AD1 /* ssl.c in Sources */,
+				71E51E082BDFC59E00FC6AD1 /* tun.c in Sources */,
+				71E51E0E2BDFC5C800FC6AD1 /* OpenNetworkSettingsBuilder.m in Sources */,
+				71E51E092BDFC59E00FC6AD1 /* script.c in Sources */,
+				71E51DFF2BDFC56A00FC6AD1 /* mainloop.c in Sources */,
+				71E51E0D2BDFC5C000FC6AD1 /* OpenClient.mm in Sources */,
+				71E51E002BDFC56A00FC6AD1 /* oath.c in Sources */,
+				71E51DED2BDFC4F400FC6AD1 /* auth-juniper.c in Sources */,
+				71B4644F2BD9154500491735 /* PacketTunnelProvider.m in Sources */,
+				71E51E012BDFC57A00FC6AD1 /* OpenConnectVPNError.m in Sources */,
+				71E51E052BDFC58C00FC6AD1 /* OpenConnectVPNPacket.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FB54942BEE1F17009890A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FB549C2BEE1F17009890A9 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F5D0C21218352EF000F85AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F5D0C19218352EF000F85AD /* X2NetworkExtensioniOS */;
+			targetProxy = 6F5D0C20218352EF000F85AD /* PBXContainerItemProxy */;
+		};
+		71B464532BD9154500491735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71B464492BD9154500491735 /* ConnectTunnel */;
+			targetProxy = 71B464522BD9154500491735 /* PBXContainerItemProxy */;
+		};
+		71FB549F2BEE1F17009890A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71FB54972BEE1F17009890A9 /* NotificationServiceExtension */;
+			targetProxy = 71FB549E2BEE1F17009890A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F70E20C221058DF008BDFB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F70E20D221058DF008BDFB4 /* Base */,
+				717839122C0DDC7800BD03B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6FE1765421C90BBE002690EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE1765521C90BBE002690EA /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6FF4AC20211EC472002C96EB /* LaunchScreen2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FF4AC21211EC472002C96EB /* Base */,
+			);
+			name = LaunchScreen2.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F5D0C23218352EF000F85AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71106EA952A75AB6CB8A4B2E /* Pods-X2NetworkExtensioniOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardNetworkExtension/WireGuardNetworkExtension_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Sources/WireGuardNetworkExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rivernet.x2vpnios.network-extension";
+				PRODUCT_NAME = X2NetworkExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardNetworkExtension/WireGuardNetworkExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6F5D0C24218352EF000F85AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FFF026992DD182EF2381CF /* Pods-X2NetworkExtensioniOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardNetworkExtension/WireGuardNetworkExtension_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Sources/WireGuardNetworkExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rivernet.x2vpnios.network-extension";
+				PRODUCT_NAME = X2NetworkExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardNetworkExtension/WireGuardNetworkExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6FF4AC24211EC472002C96EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF4AC2B211EC776002C96EB /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FF4AC25211EC472002C96EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF4AC2B211EC776002C96EB /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FF4AC27211EC472002C96EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974BBAE0A841CC05D18A1133 /* Pods-X2iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardApp/UI/iOS/WireGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
+				INFOPLIST_FILE = Sources/WireGuardApp/UI/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = X2VPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios;
+				PRODUCT_NAME = X2VPN;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6FF4AC28211EC472002C96EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB482D868CAD1431B929E179 /* Pods-X2iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardApp/UI/iOS/WireGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
+				INFOPLIST_FILE = Sources/WireGuardApp/UI/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = X2VPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios;
+				PRODUCT_NAME = X2VPN;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		71B464562BD9154500491735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768A3CC60740755B43A94908 /* Pods-ConnectTunnel.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				APP_ID_IOS = com.rivernet.x2vpnios;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = ConnectTunnel/ConnectTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ConnectTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				OTHER_CFLAGS = (
+					"-DOPENCONNECT_GNUTLS=0",
+					"-DHAVE_DTLS=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DOPENCONNECT_GNUTLS",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-liconv",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios.ConnectTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include",
+					"$(PROJECT_DIR)/include/ibxml2",
+				);
+			};
+			name = Debug;
+		};
+		71B464572BD9154500491735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D17D55B0792E5BE13A6369F /* Pods-ConnectTunnel.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				APP_ID_IOS = com.rivernet.x2vpnios;
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = ConnectTunnel/ConnectTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ConnectTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = (
+					"-DOPENCONNECT_GNUTLS=0",
+					"-DHAVE_DTLS=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DOPENCONNECT_GNUTLS",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-liconv",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios.ConnectTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include",
+					"$(PROJECT_DIR)/include/ibxml2",
+				);
+			};
+			name = Release;
+		};
+		71FB54A22BEE1F17009890A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF0907CE975AAA3879F93AE /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 WireGuard LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71FB54A32BEE1F17009890A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59777EC46A91BB1DF47356AB /* Pods-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				APP_ID_MACOS = com.rivernet.x2vpnmac;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z82T2F75B;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 WireGuard LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "X2NetworkExtensioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5D0C23218352EF000F85AD /* Debug */,
+				6F5D0C24218352EF000F85AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF4AC0F211EC46F002C96EB /* Build configuration list for PBXProject "X2iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF4AC24211EC472002C96EB /* Debug */,
+				6FF4AC25211EC472002C96EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "X2iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF4AC27211EC472002C96EB /* Debug */,
+				6FF4AC28211EC472002C96EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71B464552BD9154500491735 /* Build configuration list for PBXNativeTarget "ConnectTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71B464562BD9154500491735 /* Debug */,
+				71B464572BD9154500491735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71FB54A12BEE1F17009890A9 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FB54A22BEE1F17009890A9 /* Debug */,
+				71FB54A32BEE1F17009890A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2A0A62A2C411D3A004494D1 /* connect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2A0A62B2C411D3A004494D1 /* connect.xcdatamodel */,
+			);
+			currentVersion = D2A0A62B2C411D3A004494D1 /* connect.xcdatamodel */;
+			name = connect.xcdatamodeld;
+			path = "/Users/msgj/Documents/ios/Symlex-VPN-iOS-Global/OpenConnect/connect.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6FF4AC0C211EC46F002C96EB /* Project object */;
+}
