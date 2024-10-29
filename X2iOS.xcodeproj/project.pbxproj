@@ -223,7 +223,6 @@
 		71FE74CB2BD683E600234D90 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE74CA2BD683E600234D90 /* APIResponse.swift */; };
 		AD152DA7E1297D41FBBCF8DA /* Pods_X2NetworkExtensioniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6A1347AC2EA5CCFD314407 /* Pods_X2NetworkExtensioniOS.framework */; };
 		C8D55794CF34EC1C0ACC2E0E /* Pods_X2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1720298BD148A285C001AE /* Pods_X2iOS.framework */; };
-		D2A0A62C2C411D3A004494D1 /* connect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A0A62A2C411D3A004494D1 /* connect.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1663,7 +1662,6 @@
 				710C34092BD7B0AB00E51246 /* IPBundle.swift in Sources */,
 				714CB6ED2BEA3A8B0004AECF /* X2PasswordConfirmation.swift in Sources */,
 				71E51E042BDFC58B00FC6AD1 /* OpenConnectVPNPacket.mm in Sources */,
-				D2A0A62C2C411D3A004494D1 /* connect.xcdatamodeld in Sources */,
 				714CB6DF2BE8FB1E0004AECF /* X2CreateAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1975,7 +1973,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardApp/UI/iOS/WireGuard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 6Z82T2F75B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1995,7 +1993,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios;
 				PRODUCT_NAME = X2VPN;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";
@@ -2013,7 +2011,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Sources/WireGuardApp/UI/iOS/WireGuard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 6Z82T2F75B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2033,7 +2031,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rivernet.x2vpnios;
 				PRODUCT_NAME = X2VPN;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sources/WireGuardApp/WireGuard-Bridging-Header.h";

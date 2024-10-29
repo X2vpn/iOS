@@ -124,6 +124,7 @@ class X2CreateAccount: UIViewController {
     }
 
     @IBAction func createTapped() {
+        print("Create Button Tapped")
         self.lblStatus.isHidden = true
 
         let email = tfEmail.text ?? ""
